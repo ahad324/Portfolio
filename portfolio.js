@@ -131,8 +131,10 @@ const name = document.querySelector('.name'),
 msg = document.querySelector('.textarea');
 function sendEmail() {
     Email.send({
-        SecureToken: "47be8912-45a9-420c-9b6d-eddd62e0e9d7",
-        To: 'ahadg446@gmail.com',
+        Host: "smtp.elasticemail.com",
+        Username: "royalgujjar813@gmail.com",
+        Password: "2DB784D2819B88CD304F53A0F88CA692AB5E",
+        To: 'royalgujjar813@gmail.com',
         From: document.querySelector('.email').value,
         Subject: document.querySelector('.subject').value,
         Body: "Name:" + document.querySelector('.name').value
