@@ -736,7 +736,13 @@ i {
 }
 
 
-
+.skills .skills-content .left li{
+    list-style-type: disclosure-closed;
+    text-align: justify;
+    text-transform: capitalize;
+font-weight: 600;
+margin: 10px;
+}
 .skills .skills-content .left p {
     text-align: justify;
 }

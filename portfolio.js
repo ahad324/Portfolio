@@ -85,9 +85,9 @@ $(document).ready(function () {
 const btn = document.querySelector('.theme-btn');
 const nav = document.querySelector('.navbar')
 const menu = document.querySelector('.navbar .menu')
-const social=document.querySelector('footer .socials ')
-social.addEventListener('click',()=>{
-    let aud =new Audio('vee.wav')
+const social = document.querySelector('footer .socials ')
+social.addEventListener('click', () => {
+    let aud = new Audio('vee.wav')
     aud.play()
 })
 btn.addEventListener('click', () => {
@@ -131,7 +131,7 @@ const name = document.querySelector('.name'),
 msg = document.querySelector('.textarea');
 function sendEmail() {
     Email.send({
-        SecureToken: "dc2652e7-b07e-4e5f-80ff-8d68af347210",
+        SecureToken: "47be8912-45a9-420c-9b6d-eddd62e0e9d7",
         To: 'ahadg446@gmail.com',
         From: document.querySelector('.email').value,
         Subject: document.querySelector('.subject').value,
