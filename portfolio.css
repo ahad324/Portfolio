@@ -11,6 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
+  
 body {
     /* project14.jpg */
     /* project16.jpg */
@@ -615,10 +616,9 @@ section .title::after {
     /* margin-top: 100%; */
     transition: all 1s ease;
     overflow: hidden;
+    backdrop-filter: blur(10px);
 
 }
-
-
 .services .serv-content .card .box {
     transition: all 0.7s ease;
     top: calc(100% - 2px);
