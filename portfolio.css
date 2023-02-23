@@ -712,6 +712,11 @@ i {
 .skills .skills-content {
     transform-style: preserve-3d;
 }
+.skills {
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .skills .skills-content .column {
     width: calc(50% - 30px);
