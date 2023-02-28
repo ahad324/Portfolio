@@ -289,6 +289,21 @@ html::after {
     margin-left: 25px;
     transition: color .3s ease;
 }
+.navbar .menu li a::before {
+    content: "";
+    position: relative;
+    top: 28px;
+    display: flex;
+    width: 0%;
+    height: 2px;
+    background: crimson;
+    color: white;
+    transition: .6s all ease;
+}
+
+.navbar .menu li a:hover::before {
+    width: 100%;
+}
 
 .navbar .menu li a:hover {
     color: crimson;
