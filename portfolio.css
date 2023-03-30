@@ -1566,7 +1566,7 @@ footer .socials .insta::before {
 }
 
 footer .socials .tw::before {
-    content: "Twitter";
+    content: "Github";
 }
 
 footer .socials .insta:hover::before,
