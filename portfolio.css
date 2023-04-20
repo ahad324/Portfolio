@@ -327,7 +327,7 @@ html::after {
     height: 45px;
     width: 42px;
     background: linear-gradient(to bottom right, #ffcc00, #ff6600);
-    right: 30px;
+    right: 15px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
@@ -1889,7 +1889,7 @@ footer .theme-changer span i:hover{
     footer .theme-changer {
         position: fixed;
         bottom: 12%;
-        right: 11%;
+        right: 8%;
         transform: scale(2);
         text-decoration: none;
         display: block;
