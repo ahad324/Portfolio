@@ -1600,6 +1600,7 @@ footer .theme-changer span i {
     transition: 1s all ease;
     color: white;
     z-index: 999;
+     margin-top: 8px;
     background: linear-gradient(to bottom right, #ffcc00, #ff6600);
 }
 
