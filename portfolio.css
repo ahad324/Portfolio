@@ -326,7 +326,7 @@ html::after {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: linear-gradient(to bottom right, #ffcc00, #ff6600);
     right: 30px;
     bottom: 10px;
     text-align: center;
