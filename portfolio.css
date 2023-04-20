@@ -366,6 +366,7 @@ html::after {
     margin: auto 0 auto 40px;
     z-index: 99;
     transform-style: preserve-3d;
+    z-index:-7;
 }
 
 .home .home-content .text-1 {
@@ -1588,17 +1589,23 @@ footer .theme-changer {
 }
 
 footer .theme-changer span i {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
     text-decoration: none;
     cursor: pointer;
     transition: 1s all ease;
     color: white;
+    z-index: 999;
+    background: linear-gradient(to bottom right, #ffcc00, #ff6600);
 }
 
-footer .theme-changer span i:hover {
-    color: crimson;
+footer .theme-changer span i:hover{
+    color: black;
     transform: scale(1.2);
-
 }
 
 /* responsive media query */
