@@ -1536,7 +1536,7 @@ footer .socials span i:hover {
 }
 
 footer .socials .insta::before,
-.tw::before,
+.git::before,
 .wa::before,
 .fb::before {
     position: absolute;
@@ -1565,13 +1565,13 @@ footer .socials .insta::before {
     content: "Instagram";
 }
 
-footer .socials .tw::before {
-    content: "Github";
+footer .socials .git::before {
+    content: "GitHub";
 }
 
 footer .socials .insta:hover::before,
 .fb:hover::before,
-.tw:hover::before,
+.git:hover::before,
 .wa:hover::before {
     opacity: 1;
     transform: translate(0px, -2px);
