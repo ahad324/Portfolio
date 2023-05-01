@@ -117,40 +117,16 @@ $(window).load(function () {
 
 
 
-const form = document.querySelector('contact_form');
-const name = document.querySelector('.name'),
-    email = document.querySelector('.email'),
-    subject = document.querySelector('.subject')
-msg = document.querySelector('.textarea');
-function sendEmail() {
-    Email.send({
-        SecureToken: "0d2275b7-045d-4c82-bdd8-10604a58ac7d",
-        To: 'royalgujjar813@gmail.com',
-        From: document.querySelector('.email').value,
-        Subject: document.querySelector('.subject').value,
-        Body: "Name:" + document.querySelector('.name').value
-            + "<br> Message:" + document.querySelector('.textarea').value
+ function sendEmail() {
+            emailjs.send("service_u95p0ps", "template_s9ks5eq", {
+                from_name: document.querySelector('.contact .right form .name input').value,
+                message: document.querySelector('.contact .right form .textarea textarea').value,
+                subject: document.querySelector('.contact .right form .subject input').value + "<br> Email_id : " + document.querySelector('.contact .right form .email input').value,
+            }, "hqVI9Kr1m8IIkGMKC").then(
+                message => (document.querySelector('.contact .right form .button span').style.display = "block")
+            );
+        };
 
-    }).then(
-        message => (document.querySelector('.contact .right form .button span').style.display = "block")
-    );
-}
-
-
-// password
-//    E4075C7C66FE565C49244C6512FF77926E13
-//   Username
-// ahadg446@gmail.com
-// Password
-// **********26E13
-// Server
-// smtp.elasticemail.com
-// Port
-// 2525
-// Restricted access
-// Disabled
-// Expires
-// Never
 
 VanillaTilt.init(document.querySelector(".left"), {
     max: 50,
