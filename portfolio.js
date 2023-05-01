@@ -123,7 +123,11 @@ $(window).load(function () {
                 message: document.querySelector('.contact .right form .textarea textarea').value,
                 subject: document.querySelector('.contact .right form .subject input').value + "<br> Email_id : " + document.querySelector('.contact .right form .email input').value,
             }, "hqVI9Kr1m8IIkGMKC").then(
-                message => (document.querySelector('.contact .right form .button span').style.display = "block")
+                message => (document.querySelector('.contact .right form .button span').style.display = "block"),
+                 //remove message after seven seconds
+                 setTimeout(() => {
+                     document.querySelector('.contact .right form .button span').innerHTML = ''
+               }, 7000)
             );
         };
 
