@@ -1521,6 +1521,18 @@ footer .socials span i.bottom {
     text-align: center;
     padding: 13px;
     box-shadow: 1px 1px 5px #ff0072;
+    animation: icons 10s alternate infinite;
+    border-radius: 63% 37% 49% 51% / 34% 71% 29% 66%;
+}
+
+@keyframes icons {
+    50% {
+        border-radius: 30% 70% 68% 32% / 46% 30% 70% 54%;
+    }
+
+    100% {
+        border-radius: 49% 51% 60% 40% / 66% 47% 53% 34%;
+    }
 }
 
 footer .socials span i {
@@ -1594,7 +1606,7 @@ footer .theme-changer span i {
     align-items: center;
     width: 20px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 66% 34% 55% 45% / 34% 71% 29% 66%;
     text-decoration: none;
     cursor: pointer;
     transition: 1s all ease;
