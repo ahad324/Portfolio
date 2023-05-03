@@ -1884,6 +1884,7 @@ footer .theme-changer span i:hover{
         color: white;
         font-size: 18px;
         box-shadow: none;
+        border: none;
     }
 
     footer .socials span i {
