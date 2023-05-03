@@ -1520,6 +1520,7 @@ footer .socials span i.bottom {
     border-radius: 100px;
     text-align: center;
     padding: 13px;
+    border: 1px solid red;
     box-shadow: 1px 1px 5px #ff0072;
     animation: icons 10s alternate infinite;
     border-radius: 63% 37% 49% 51% / 34% 71% 29% 66%;
