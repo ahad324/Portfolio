@@ -1396,7 +1396,7 @@ footer .socials {
     line-height: 35px;
     font-size: 2rem;
     transition: all 1.5s ease;
-    z-index: 99;
+    z-index: -1;
 }
 
 
@@ -1501,6 +1501,7 @@ footer .theme-changer {
     text-decoration: none;
     display: block;
     margin-block: 5%;
+    z-index: -1;
 }
 
 footer .theme-changer span i {
@@ -1514,7 +1515,6 @@ footer .theme-changer span i {
     cursor: pointer;
     transition: 1s all ease;
     color: white;
-    z-index: 999;
      margin-top: 8px;
     background: linear-gradient(to bottom right, #ffcc00, #ff6600);
 }
