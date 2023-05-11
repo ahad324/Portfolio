@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -11,123 +12,23 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1A2238;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dddd;
+}
+
 body {
-    /* project14.jpg */
-    /* project16.jpg */
     color: #fff;
     background-color: #1A2238;
     text-shadow: 5px 5px 10px black;
     scroll-behavior: smooth;
-}
-
-.home:before {
-    content: '';
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
-    ;
-    border-radius: 50%;
-    top: 20%;
-    z-index: -99;
-    left: 12%;
-    animation: bod 3s alternate-reverse infinite;
-    animation-delay: 1s;
-}
-
-.home:after {
-    content: '';
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
-    ;
-    border-radius: 50%;
-    z-index: -99;
-    top: 20%;
-    left: 65%;
-    animation: htm 3s alternate-reverse infinite;
-    animation-delay: 2s;
-}
-
-body:before {
-    content: '';
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
-    ;
-    border-radius: 50%;
-    z-index: -99;
-    left: 28%;
-    top: 47%;
-    animation: bod 3s alternate-reverse infinite;
-    animation-delay: 1s;
-}
-
-body::after {
-    content: '';
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
-    ;
-    border-radius: 50%;
-    z-index: -99;
-    top: 30%;
-    left: 50%;
-    animation: htm 3s alternate-reverse infinite;
-    animation-delay: 2s;
-}
-
-html::before {
-    content: '';
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
-    ;
-    border-radius: 50%;
-    z-index: -99;
-    left: 70%;
-    top: 40%;
-    animation: bod 3s alternate-reverse infinite;
-}
-
-html::after {
-    content: '';
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
-    ;
-    border-radius: 50%;
-    z-index: -99;
-    left: 30%;
-    top: 20%;
-    animation: htm 3s alternate infinite;
-}
-
-@keyframes bod {
-
-    50% {
-        transform: translate(-10px, 10px);
-    }
-
-    100% {
-        transform: translate(-10px, -10px);
-    }
-}
-
-@keyframes htm {
-    50% {
-        transform: translate(10px, -10px);
-
-    }
-
-    100% {
-        transform: translate(-10px, -10px)
-    }
 }
 
 /* Loader styling */
@@ -1622,7 +1523,15 @@ footer .theme-changer span i:hover{
     color: black;
     transform: scale(1.2);
 }
-
+/* --- Blob ---*/
+lottie-player{
+    width: 600px;
+    height: 600px;
+    z-index: -999;
+    position:fixed;
+    left: 25%;
+    top: 15%;
+}
 /* responsive media query */
 
 @media (max-width:1300px) {
@@ -1920,6 +1829,10 @@ footer .theme-changer span i:hover{
     .timeline li::before {
         left: 48%;
     }
+    lottie-player{
+        left: 15%;
+        width: 450px;
+    }
 
 }
 
@@ -1935,6 +1848,10 @@ footer .theme-changer span i:hover{
 
     .about .about-content .right a {
         margin-left: 5%;
+    }
+    lottie-player{
+        left: 0%;
+        width: 400px;
     }
 
 }
