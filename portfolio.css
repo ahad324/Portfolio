@@ -89,6 +89,8 @@ body::after {
     left: 50%;
     animation: htm 3s alternate-reverse infinite;
     animation-delay: 2s;
+    background-image: url(ahad3.jpg);
+    background-size: cover;
 }
 
 html::before {
@@ -1663,9 +1665,11 @@ footer .theme-changer span i:hover{
 
 @media (max-width:947px) {
 
-    html::before {
+ html::before {
         top: 17%;
         left: 46%;
+        background-image: url(ahad3.jpg);
+        background-size: cover;
     }
 
     body::before {
@@ -1678,8 +1682,10 @@ footer .theme-changer span i:hover{
         left: 10%;
     }
 
-    body::after {
+  body::after {
         top: 45%;
+        background-image: none;
+        background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
     }
 
     .home:before {
