@@ -89,9 +89,6 @@ body::after {
     left: 50%;
     animation: htm 3s alternate-reverse infinite;
     animation-delay: 2s;
-    background-image: url(ahad3.jpg);
-    background-position: 34% 0%;
-    background-size: cover;
 }
 
 html::before {
@@ -106,6 +103,8 @@ html::before {
     left: 70%;
     top: 40%;
     animation: bod 3s alternate-reverse infinite;
+      background-image: url(ahad3.jpg);
+    background-size: cover;
 }
 
 html::after {
