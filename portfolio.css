@@ -1669,7 +1669,12 @@ footer .theme-changer span i:hover{
     .max-width {
         padding: 0 50px;
     }
-
+  .services .serv-content .card:nth-child(1),.services .serv-content .card:nth-child(3){
+        height: 400px;
+    }
+    .services .serv-content .card:nth-child(2){
+        height: 450px;
+    }
 }
 
 @media (max-width:947px) {
