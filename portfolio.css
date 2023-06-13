@@ -658,7 +658,12 @@ section .title::after {
     backdrop-filter: blur(10px);
 
 }
-
+.services .serv-content .card:nth-child(1),.services .serv-content .card:nth-child(3){
+    height: 330px;
+}
+.services .serv-content .card:nth-child(2){
+    height: 400px;
+}
 .services .serv-content .card .box {
     transition: all 0.7s ease;
     top: calc(100% - 2px);
@@ -673,11 +678,9 @@ i {
     transition: all 1.2s ease;
 }
 
-
-
 .services .serv-content .card .box:hover p,
 i {
-    transform: translateZ(90px);
+    transform: translateZ(100px);
 }
 
 .services .serv-content .card .box:hover .text {
