@@ -1242,9 +1242,8 @@ i {
     content: "";
     position: absolute;
     width: 5px;
-    background: #201414;
+    background: black;
     box-shadow: 2px 2px 5px black, -2px -2px 10px black;
-    filter: drop-shadow(5px 5px 10px #3333);
 }
 
 
@@ -1255,8 +1254,8 @@ i {
     position: absolute;
     top: 18px;
     left: 49%;
-    background: #20f17b;
-     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background:linear-gradient(to bottom right, #ffcc00, #ff6600);;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .timeline li:nth-child(even) {
