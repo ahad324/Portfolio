@@ -42,7 +42,7 @@ body {
     top: 20%;
     z-index: -99;
     left: 12%;
-    animation: bod 3s alternate-reverse infinite;
+    animation: home 3s alternate-reverse infinite;
     animation-delay: 1s;
 }
 
@@ -57,7 +57,7 @@ body {
     z-index: -99;
     top: 20%;
     left: 65%;
-    animation: htm 3s alternate-reverse infinite;
+    animation: home 3s alternate-reverse infinite;
     animation-delay: 2s;
 }
 
@@ -140,6 +140,14 @@ html::after {
 
     100% {
         transform: translate(-10px, -10px)
+    }
+}
+@keyframes home {
+    50%{
+        transform: translate(20px, -10px);
+    }
+    100%{
+        transform: translate(10px, -10px);
     }
 }
 
