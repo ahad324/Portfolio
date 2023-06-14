@@ -340,8 +340,6 @@ html::after {
 
 /* menu btn styling */
 .menu-btn {
-    color: #fff;
-    font-size: 23px;
     cursor: pointer;
     display: none;
 }
@@ -349,7 +347,7 @@ html::after {
     display: none;
 }
 .menu-btn i {
-    width: 30px;
+    width: 25px;
     display: flex;
     background: white;
     height: 3px;
