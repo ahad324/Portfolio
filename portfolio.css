@@ -158,6 +158,8 @@ html::after {
     background: black;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position:absolute;
     text-align: center;
     min-height: 100vh;
     color: white;
