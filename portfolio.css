@@ -1148,7 +1148,7 @@ i {
     position: absolute;
     top: 18px;
     left: 49%;
-    background:linear-gradient(to bottom right, #ffcc00, #ff6600);;
+    background:linear-gradient(to bottom right, crimson, #ff0072);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
