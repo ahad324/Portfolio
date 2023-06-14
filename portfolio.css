@@ -1726,23 +1726,6 @@ footer .theme-changer span i:hover{
         transform: translate(0px);
     }
 
-    .teams .carousel .card::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(#03a9f4, #e91ee3);
-        left: 0;
-        top: 150%;
-        transition: 1s all ease;
-        border-radius: 10px;
-    }
-
-    .teams .carousel .card:hover::before {
-        top: 0;
-    }
-
-
 }
 
 @media (max-width:690px) {
