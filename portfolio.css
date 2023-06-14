@@ -345,6 +345,30 @@ html::after {
     cursor: pointer;
     display: none;
 }
+.navbar .max-width input {
+    display: none;
+}
+.menu-btn i {
+    width: 30px;
+    display: flex;
+    background: white;
+    height: 3px;
+    margin: 4px;
+    transition: .5s all ease;
+}
+
+input:checked~.menu-btn i:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+input:checked~.menu-btn i:nth-child(2) {
+    display: none;
+}
+
+input:checked~.menu-btn i:nth-child(3) {
+    transform: rotate(-45deg);
+}
 
 .scroll-up-btn {
     position: fixed;
