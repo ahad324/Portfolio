@@ -1636,17 +1636,10 @@ footer .theme-changer span i:hover{
 
         display: block;
         z-index: 999;
-
-    }
-
-    .menu-btn i.active:before {
-        content: "\f00d";
-
     }
 
     .max-width {
         padding: 0 50px;
-
     }
 
     .navbar .menu {
