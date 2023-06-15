@@ -1649,7 +1649,7 @@ footer .theme-changer span i:hover{
         text-align: center;
         background: #1A2238;
         padding-top: 1%;
-        transition: all .7s ease;
+        transition: all .4s ease;
         left: 0;
         right:0;
         clip-path: circle(17% at 90%  -40vh);
