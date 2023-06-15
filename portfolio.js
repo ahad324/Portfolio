@@ -1,3 +1,5 @@
+//<=================== Adding Classes To Make Some Cool Effects 😎 ===================>
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {
@@ -18,13 +20,13 @@ $(document).ready(function () {
     });
 
 
-    // slide-up code
+   // <=============== Slide-Up Button 🔲 ===============>
     $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 });
 
     });
 
-    // toggle menu 
+    // <=============== Toggling Menu 🤓 ===============>
 
     $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
@@ -33,7 +35,7 @@ $(document).ready(function () {
     })
 
 
-    // text animation
+  // <=============== Text Typing Animation ✍️ ===============>
 
     var typed = new Typed(".typing", {
         strings: ["WEB-DEVELOPER", "FREELANCER", "APP-DEVELOPER", "UI/UIX Designer"],
@@ -49,7 +51,7 @@ $(document).ready(function () {
         loop: true
     });
 
-    // owl craousel
+    // <=============== Image Slider 🍿===============>
 
     $('.carousel').owlCarousel({
         margin: 40,
@@ -73,12 +75,20 @@ $(document).ready(function () {
     });
 });
 
+/*
+<=============== Random Color Generator (You Can Use If U Want 😊) ===============>
+var randomColor = "#" + (Math.ceil (Math.random ()*16777215).toString (16));
+*/
 
-// var randomColor = "#" + (Math.ceil (Math.random ()*16777215).toString (16));
+
+//<=============== Changing Theme 📺 and Adding Some Sounds On Clicking The Buttons 🔊 ===============>
+
 const btn = document.querySelector('.theme-btn');
 const nav = document.querySelector('.navbar')
 const menu = document.querySelector('.navbar .menu')
 const social = document.querySelector('footer .socials ')
+
+
 social.addEventListener('click', () => {
     let aud = new Audio('vee.wav')
     aud.play()
@@ -104,18 +114,16 @@ btn.addEventListener('click', () => {
 })
 
 
+// <=============== Displaying Pre-Loader During Loading 🔃 ===============>
 
 window.onload = function () {
     document.querySelector('.loader_bg').style.display = 'none';
     document.querySelector('body').style.display = 'block';
 
 }
-$(window).load(function () {
-    $('.loader').fadeOut();
-    $('body').delay(100).fadeOut('slow');
-}), 2000;
 
 
+// <=============== Contact-Form Submission 📃 ===============>
 
  function sendEmail() {
             emailjs.send("service_u95p0ps", "template_s9ks5eq", {
@@ -130,10 +138,4 @@ $(window).load(function () {
                }, 7000)
             );
         };
-
-
-VanillaTilt.init(document.querySelector(".left"), {
-    max: 50,
-    speed: 100
-});
 
