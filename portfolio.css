@@ -360,11 +360,12 @@ html::after {
     position: absolute;
 }
 .menu-btn i.active:nth-child(2){
-    display: none;
+    transform: translateX(250px);
 }
 .menu-btn i.active:nth-child(3){
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translate(4px,-5px);
 }
+
 
 .scroll-up-btn {
     position: fixed;
