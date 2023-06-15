@@ -159,7 +159,7 @@ html::after {
     justify-content: center;
     align-items: center;
     width: 100%;
-    position:absolute;
+    position:fixed;
     text-align: center;
     min-height: 100vh;
     color: white;
