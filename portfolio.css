@@ -978,7 +978,6 @@ i {
     transition: all 0.3s ease;
     border-radius: 10px;
     transform: perspective(1000px);
-    transform: translateZ(0px);
 }
 
 .projects .carousel .card a {
@@ -998,7 +997,7 @@ i {
 }
 
 .projects .carousel .card .box:hover img {
-    transform: translateZ(60px);
+    transform: translateZ(90px);
 }
 
 
