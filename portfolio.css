@@ -1776,13 +1776,6 @@ footer .theme-changer span i:hover{
         margin-left: 5%;
         transform: translatex(0px) translateY(0px);
     }
-    .services .serv-content .card:nth-child(1),.services .serv-content .card:nth-child(3){
-        height: 360px;
-    }
-    .services .serv-content .card:nth-child(2){
-        height: 450px;
-    }
-
     .serv-content {
         display: block;
     }
