@@ -355,16 +355,14 @@ html::after {
     transition: .5s all ease;
 }
 
-input:checked~.menu-btn i:nth-child(1) {
+.menu-btn i.active:nth-child(1){
     transform: rotate(45deg);
     position: absolute;
 }
-
-input:checked~.menu-btn i:nth-child(2) {
+.menu-btn i.active:nth-child(2){
     display: none;
 }
-
-input:checked~.menu-btn i:nth-child(3) {
+.menu-btn i.active:nth-child(3){
     transform: rotate(-45deg);
 }
 
