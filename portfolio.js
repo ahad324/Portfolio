@@ -18,14 +18,15 @@ $(document).ready(function () {
             $('footer .socials,footer .socials span,footer .socials span i').removeClass('bottom');
         };
     });
-
+                // <<<<<<=========================>>>>>>
 
    // <=============== Slide-Up Button 🔲 ===============>
     $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 });
 
     });
-
+                // <<<<<<=========================>>>>>>
+    
     // <=============== Toggling Menu 🤓 ===============>
 
     $('.menu-btn').click(function () {
@@ -33,7 +34,7 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
         $('.navbar').toggleClass("active");
     })
-
+                // <<<<<<=========================>>>>>>
 
   // <=============== Text Typing Animation ✍️ ===============>
 
@@ -50,7 +51,8 @@ $(document).ready(function () {
         backSpeed: 60,
         loop: true
     });
-
+                // <<<<<<=========================>>>>>>
+    
     // <=============== Image Slider 🍿===============>
 
     $('.carousel').owlCarousel({
@@ -74,45 +76,67 @@ $(document).ready(function () {
         }
     });
 });
-
+                // <<<<<<=========================>>>>>>
 /*
 <=============== Random Color Generator (You Can Use If U Want 😊) ===============>
 var randomColor = "#" + (Math.ceil (Math.random ()*16777215).toString (16));
 */
 
+                // <<<<<<=========================>>>>>>
 
 //<=============== Changing Theme 📺 and Adding Some Sounds On Clicking The Buttons 🔊 ===============>
 
 const btn = document.querySelector('.theme-btn');
 const nav = document.querySelector('.navbar')
 const menu = document.querySelector('.navbar .menu')
-const social = document.querySelector('footer .socials ')
-
+const social = document.querySelector('footer .socials ');
+const blackBG=document.querySelector(".blackBG");
+const purpleBG=document.querySelector(".purpleBG");
 
 social.addEventListener('click', () => {
-    let aud = new Audio('vee.wav')
+    let aud = new Audio('../Sounds/vee.wav')
     aud.play()
 })
+
 btn.addEventListener('click', () => {
-    btn.classList.toggle('fa-moon')
+    btn.classList.toggle('fa-moon');
 
-    if (btn.classList.toggle('fa-sun')) {
-        document.body.style.background = "#1A2238";
-        nav.style.background = '#1A2238';
-        menu.style.background = '#1A2238';
-        let aud = new Audio('noti.wav');
-        aud.play();
-
-    } else {
-        document.body.style.background = "black";
-        nav.style.background = 'black';
-        menu.style.background = 'black';
-        let aud = new Audio('drum.wav');
-        aud.play();
+    // <====== Background Animation 📺 ======>
+    
+    blackBG.classList.toggle("active");
+    if(blackBG.classList.contains("active")){
+        purpleBG.classList.remove("active");
+    }else{
+        purpleBG.classList.add("active");
     }
 
-})
+    if(blackBG.classList.contains("active")){
+        setTimeout(()=>{
+            if(btn.classList.contains('fa-moon')){
+                document.body.style.background = "black";
+                nav.style.background = 'black';
+                menu.style.background = 'black';
+                let aud = new Audio('../Sounds/drum.wav');
+                aud.play();
+            }
+        },4100)
+       
+         
+    }else{
+        setTimeout(()=>{
+            if (btn.classList.contains('fa-sun')) {
+                document.body.style.background = "#1A2238";
+                nav.style.background = '#1A2238';
+                menu.style.background = '#1A2238';
+                let aud = new Audio('../Sounds/noti.wav');
+                aud.play();
+            }
+        },4100)
+        
+    }   
 
+})
+                // <<<<<<=========================>>>>>>
 
 // <=============== Displaying Pre-Loader During Loading 🔃 ===============>
 
@@ -121,7 +145,7 @@ window.onload = function () {
     document.querySelector('body').style.display = 'block';
 
 }
-
+                // <<<<<<=========================>>>>>>
 
 // <=============== Contact-Form Submission 📃 ===============>
 
@@ -139,3 +163,4 @@ window.onload = function () {
             );
         };
 
+                // <<<<<<<<<<<<<<<<<========================================>>>>>>>>>>>>>>>>>
