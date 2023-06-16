@@ -440,9 +440,10 @@ html::after {
     width: 25px;
     display: flex;
     background: var(---secondary-clor);
-    height: 3px;
+    height: 4px;
     margin: 4px;
     transition: .5s all ease;
+    border-radius: 10px;
 }
 
 .menu-btn i.active:nth-child(1){
@@ -453,7 +454,7 @@ html::after {
     transform: translateX(250px);
 }
 .menu-btn i.active:nth-child(3){
-    transform: rotate(-45deg) translate(4px,-5px);
+   transform: rotate(-45deg) translate(5px, -6px);
 }
 
 
