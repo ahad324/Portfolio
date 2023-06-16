@@ -427,7 +427,7 @@ html::after {
 }
 
 .menu-btn i.active:nth-child(1){
-    transform: rotate(45deg);
+    transform: rotate(50deg);
     position: absolute;
 }
 .menu-btn i.active:nth-child(2){
