@@ -12,7 +12,8 @@
     ---Section-index:99;   
     ---navicon-index:999;
     ---loader-index:9999;   
-     ---blob-shadow: -1px -1px 50px black, 1px 1px 50px black;
+    ---blob-shadow: -1px -1px 50px black, 1px 1px 50px black;
+    ---mediablob-shadow: -1px -1px 20px black, 1px 1px 20px black;
 }
 
 /* <====== Scrollbar styling 🔰 ======> */
@@ -1672,7 +1673,9 @@ footer .theme-changer span i:hover{
 }
 
 @media (max-width:947px) {
-
+    html::before,html::after, body::before, body::after, .home:before, .home:after {
+        box-shadow: var(---mediablob-shadow);
+    }
  html::before {
         top: 17%;
         left: 46%;
