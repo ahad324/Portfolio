@@ -2,6 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+/* <====== Z-indexes + Background Colors======>  */
+:root{
+    ---back-clr:crimson;
+    ---primary-clr:crimson;
+    ---secondary-clor:white; 
+    ---blob-index:-9; 
+    ---bg-anim-index:9;
+    ---Section-index:99;   
+    ---navicon-index:999;
+    ---loader-index:9999;   
+}
+
 /* <====== Scrollbar styling 🔰 ======> */
 
 * {
@@ -20,13 +32,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1A2238;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #dddd;
 }
           /* <=================> */
+
 /* <====== Background Animation 📺 ======> */
 
 .bganimation{
@@ -87,8 +100,8 @@ html {
         opacity: 0;
     }
 }
-.purpleBG.active{
-    background: #1A2238;
+.CrimBG.active{
+    background: var(---back-clr);
     display: block;
     animation: Bganim 5s  1 linear forwards;
 }
@@ -100,7 +113,7 @@ html {
 
 body {
     color: #fff;
-    background-color: #1A2238;
+    background: var(---back-clr);
     text-shadow: 5px 5px 10px black;
     scroll-behavior: smooth;
 }
@@ -117,7 +130,7 @@ body {
     box-shadow:  -1px -1px 50px black, 1px 1px 50px black;
     border-radius: 50%;
     top: 20%;
-    z-index: -99;
+    z-index: var(---blob-index);
     left: 12%;
     animation: home 3s alternate-reverse infinite;
     animation-delay: 1s;
@@ -131,7 +144,7 @@ body {
     background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
     box-shadow:  -1px -1px 50px black, 1px 1px 50px black;
     border-radius: 50%;
-    z-index: -99;
+    z-index: var(---blob-index);
     top: 20%;
     left: 65%;
     animation: home 3s alternate-reverse infinite;
@@ -146,7 +159,7 @@ body:before {
     background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
     box-shadow:  -1px -1px 50px black, 1px 1px 50px black;
     border-radius: 50%;
-    z-index: -99;
+    z-index: var(---blob-index);;
     left: 28%;
     top: 47%;
     animation: bod 3s alternate-reverse infinite;
@@ -161,12 +174,12 @@ body::after {
     background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
     box-shadow:  -1px -1px 50px black, 1px 1px 50px black;
     border-radius: 50%;
-    z-index: -99;
+    z-index: var(---blob-index);
     top: 30%;
     left: 50%;
     animation: htm 3s alternate-reverse infinite;
     animation-delay: 2s;
-    background-image: url(ahad3.jpg);
+    background-image: url(../Images/Ahad.jpg);
     background-size: cover;
 }
 
@@ -178,7 +191,7 @@ html::before {
     background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
     box-shadow:  -1px -1px 50px black, 1px 1px 50px black;
     border-radius: 50%;
-    z-index: -99;
+    z-index: var(---blob-index);
     left: 70%;
     top: 40%;
     animation: bod 3s alternate-reverse infinite;
@@ -192,7 +205,7 @@ html::after {
     background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
     box-shadow:  -1px -1px 50px black, 1px 1px 50px black;
     border-radius: 50%;
-    z-index: -99;
+    z-index: var(---blob-index);
     left: 30%;
     top: 20%;
     animation: htm 3s alternate infinite;
@@ -240,8 +253,8 @@ html::after {
     position:fixed;
     text-align: center;
     min-height: 100vh;
-    color: white;
-    z-index: 999999;
+    color: var(---secondary-clor);
+    z-index: var(---loader-index);
 }
 
 .loader {
@@ -266,7 +279,7 @@ html::after {
     left: 0;
     width: 15px;
     height: 15px;
-    background: white;
+    background: var(---secondary-clor);
     border-radius: 50%;
     transform: scale(0);
     animation: animate 2s linear infinite;
@@ -327,20 +340,20 @@ html::after {
 .navbar {
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: var(---navicon-index);
     padding: 30px 0;
     font-family: 'ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background: #1A2238;
+    background: var(---primary-clr);
 }
 
 .navbar.sticky {
     padding: 30px 0;
-    color: #fff;
+    color: var(---secondary-clor);
     background-attachment: fixed;
     box-shadow: 2px 2px 20px black;
     text-shadow: 5px 5px 5px black;
-    z-index: 9999;
+    z-index: var(---navicon-index);
 }
 
 
@@ -354,29 +367,29 @@ html::after {
 .navbar .logo a {
     font-size: 35px;
     font-weight: 600;
-    color: #fff;
+    color: var(---secondary-clor);
 }
 
 .navbar .logo a span {
-    color: crimson;
+    color: var(---primary-clr);
     transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span {
-    color: #fff;
+    color: var(---secondary-clor);
 }
 
 .navbar .menu li {
     list-style: none;
     display: inline-block;
     margin-inline-start: 20px;
-    color: white;
+    color: var(---secondary-clor);
     cursor: pointer;
 }
 
 .navbar .menu li a {
     display: block;
-    color: #fff;
+    color: var(---secondary-clor);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -390,8 +403,8 @@ html::after {
     display: flex;
     width: 0%;
     height: 2px;
-    background: crimson;
-    color: white;
+    background: var(---secondary-clor);
+    color: var(---secondary-clor);
     transition: .6s all ease;
 }
 
@@ -400,11 +413,11 @@ html::after {
 }
 
 .navbar .menu li a:hover {
-    color: crimson;
+    color: var(---secondary-clor);
 }
 
 .navbar.sticky .menu li a:hover {
-    color: crimson;
+    color: var(---primary-clr);
 }
           /* <=================> */
 
@@ -420,7 +433,7 @@ html::after {
 .menu-btn i {
     width: 25px;
     display: flex;
-    background: white;
+    background: var(---secondary-clor);
     height: 3px;
     margin: 4px;
     transition: .5s all ease;
@@ -442,12 +455,12 @@ html::after {
     position: fixed;
     height: 45px;
     width: 42px;
-    background:crimson;
+    background:var(---primary-clr);
     right: 15px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    z-index: 9999;
+    z-index: var(---navicon-index);
     font-size: 30px;
     border-radius: 6px;
     cursor: pointer;
@@ -467,6 +480,7 @@ html::after {
 
 section {
     padding: 100px 0;
+    z-index: var(---Section-index);
 }
 
 .max-width {
@@ -523,9 +537,9 @@ section .title::after {
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: var(---primary-clr);
     padding: 5px;
-    background: #fff;
+    background: var(---secondary-clor);
     transform: translateX(-50%);
 }
           /* <=================> */
@@ -547,9 +561,7 @@ section .title::after {
 
 .home .max-width {
     margin: auto 0 auto 40px;
-    z-index: 99;
     transform-style: preserve-3d;
-    z-index:-7;
 }
 
 .home .home-content .text-1 {
@@ -568,7 +580,7 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-    color: crimson;
+    color: var(---primary-clr);
     font-weight: 500;
 }
 
@@ -584,7 +596,7 @@ section .title::after {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: white;
+    color: var(---secondary-clor);
     background: crimson;
     box-shadow: 1px 1px 10px crimson, -1px -1px 10px crimson;
 }
@@ -608,8 +620,8 @@ section .title::after {
 }
 
 .home .home-content a:hover {
-    color: white;
-    border-color: crimson;
+    color: var(---secondary-clor);
+    border-color: var(---primary-clr);
 }
 
 
@@ -659,7 +671,7 @@ section .title::after {
 }
 
 .about .about-content .right .text span {
-    color: crimson;
+    color: var(---primary-clr);
 }
 
 .about .about-content .right p {
@@ -684,7 +696,7 @@ section .title::after {
 
 .about .about-content .right a {
     display: inline-block;
-    color: white;
+    color: var(---secondary-clor);
     background: crimson;
     border: none;
     box-shadow: 0 0.7em 1.5em -0.5em crimson, 1px -1px 15em -0.5em crimson;
@@ -717,7 +729,7 @@ section .title::after {
 
 .services .title::before,
 .teams .title::before {
-    background: #fff;
+    background: var(---secondary-clor);
 }
 
 .services .title::after,
@@ -817,7 +829,7 @@ i {
 
 .services .serv-content .card i {
     font-size: 50px;
-    color: crimson;
+    color: var(---primary-clr);
     transition: color 0.3s ease;
 }
 
@@ -890,7 +902,7 @@ i {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: white;
+    color: var(---secondary-clor);
     background: crimson;
 }
 
@@ -913,7 +925,7 @@ i {
 }
 
 .skills .skills-content .left a:hover {
-    color: white;
+    color: var(---secondary-clor);
     box-shadow: 2px 2px 10px crimson, -2px -2px 10px crimson;
 }
 
@@ -921,7 +933,7 @@ i {
 
 .skills .skills-content .left a {
     display: inline-block;
-    background-color: crimson;
+    background-color: var(---primary-clr);
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -1046,14 +1058,14 @@ i {
     margin: 10px;
     padding: 10px;
      background: crimson;
-    color: white;
+    color: var(---secondary-clor);
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
 }
 
 .projects .carousel .card a:hover {
     background: white;
-    color: crimson;
+    color: var(---primary-clr);
 }
 
 .projects .carousel .card .box:hover img {
@@ -1274,7 +1286,7 @@ i {
 
 .contact .contact-content .row i {
     font-size: 25px;
-    color: crimson;
+    color: var(---primary-clr);
 }
 
 .contact .contact-content .row .info .head {
@@ -1348,7 +1360,7 @@ i {
 .contact .right form .button button {
     font-size: 20px;
     background: crimson;
-    color: white;
+    color: var(---secondary-clor);
     padding: 0.7em 1em;
     padding-left: 0.9em;
     display: flex;
@@ -1407,7 +1419,7 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(wave.png);
+    background: url(../Images/wave.png);
     background-size: cover;
 }
 
@@ -1465,7 +1477,7 @@ footer .wave#wave4 {
 footer {
     background: transparent;
     padding: 10px;
-    color: white;
+    color: var(---secondary-clor);
     text-align: center;
     height: 25vh;
     position: relative;
@@ -1476,7 +1488,7 @@ footer span {
 }
 
 footer span i {
-    color: crimson;
+    color: var(---primary-clr);
     text-decoration: none;
 }
 
@@ -1515,7 +1527,7 @@ footer .socials span.bottom {
 }
 
 footer .socials span i.bottom {
-    color: white;
+    color: var(---secondary-clor);
     background: transparent;
     border-radius: 100px;
     text-align: center;
@@ -1537,14 +1549,14 @@ footer .socials span i.bottom {
 }
 
 footer .socials span i {
-    color: white;
+    color: var(---secondary-clor);
     font-size: 1.5rem;
     cursor: pointer;
     transition: .3s all ease;
 }
 
 footer .socials span i:hover {
-    color: crimson;
+    color: var(---primary-clr);
     text-decoration: none;
     transform: scale(1.2);
 }
@@ -1611,14 +1623,14 @@ footer .theme-changer span i {
     text-decoration: none;
     cursor: pointer;
     transition: 1s all ease;
-    color: white;
+    color: var(---secondary-clor);
     z-index: 999;
      margin-top: 8px;
     background: crimson;
 }
 
 footer .theme-changer span i:hover{
-    color: crimson;
+    color: var(---primary-clr);
     background: white;
     transform: scale(1.2);
 }
@@ -1659,7 +1671,7 @@ footer .theme-changer span i:hover{
  html::before {
         top: 17%;
         left: 46%;
-        background-image: url(ahad3.jpg);
+        background-image: url(../Images/Ahad.jpg);
         background-size: cover;
     }
 
@@ -1708,7 +1720,7 @@ footer .theme-changer span i:hover{
         width: 100%;
         top: 100px;
         text-align: center;
-        background: #1A2238;
+        background: var(---primary-clr);
         padding-top: 1%;
         transition: all 1s ease;
         left: 0;
@@ -1750,7 +1762,7 @@ footer .theme-changer span i:hover{
         width: 0%;
         height: 2px;
         background: #e13690;
-        color: white;
+        color: var(---secondary-clor);
         transition: .6s all ease;
     }
 
@@ -1875,21 +1887,21 @@ footer .theme-changer span i:hover{
     }
 
     footer .socials span i.bottom {
-        color: white;
+        color: var(---secondary-clor);
         font-size: 18px;
         box-shadow: none;
         border: none;
     }
 
     footer .socials span i {
-        color: white;
+        color: var(---secondary-clor);
         font-size: 18px;
         cursor: pointer;
         transition: .3s all ease;
     }
 
     footer .socials span i:hover {
-        color: crimson;
+        color: var(---primary-clr);
         text-decoration: none;
         transform: scale(1.2);
     }
