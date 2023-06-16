@@ -12,7 +12,7 @@
     ---Section-index:99;   
     ---navicon-index:999;
     ---loader-index:9999;   
-     ---blob-shadow: var(---blob-shadow);
+     ---blob-shadow: -1px -1px 50px black, 1px 1px 50px black;
 }
 
 /* <====== Scrollbar styling 🔰 ======> */
