@@ -87,18 +87,22 @@ html {
     80%{
         clip-path: circle(20% at 50% 50%);
         opacity: 1;
+        z-index: -99;
     }
     90%{
         clip-path: circle(100% at 50% 50%);
         opacity: 1;
+        z-index: -99;
     }
     91%,95%{
         display: none;
         opacity: 0;
+        z-index: -99;
     }
     95%,100%{
         display: none;
         opacity: 0;
+        z-index: -99;
     }
 }
 .CrimBG.active{
