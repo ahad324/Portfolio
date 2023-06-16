@@ -91,7 +91,7 @@ const nav = document.querySelector('.navbar')
 const menu = document.querySelector('.navbar .menu')
 const social = document.querySelector('footer .socials ');
 const blackBG=document.querySelector(".blackBG");
-const purpleBG=document.querySelector(".purpleBG");
+const CrimBG=document.querySelector(".CrimBG");
 
 social.addEventListener('click', () => {
     let aud = new Audio('../Sounds/vee.wav')
@@ -105,9 +105,9 @@ btn.addEventListener('click', () => {
     
     blackBG.classList.toggle("active");
     if(blackBG.classList.contains("active")){
-        purpleBG.classList.remove("active");
+        CrimBG.classList.remove("active");
     }else{
-        purpleBG.classList.add("active");
+        CrimBG.classList.add("active");
     }
 
     if(blackBG.classList.contains("active")){
@@ -125,9 +125,9 @@ btn.addEventListener('click', () => {
     }else{
         setTimeout(()=>{
             if (btn.classList.contains('fa-sun')) {
-                document.body.style.background = "#1A2238";
-                nav.style.background = '#1A2238';
-                menu.style.background = '#1A2238';
+                document.body.style.background = "crimson";
+                nav.style.background = 'crimson';
+                menu.style.background = 'crimson';
                 let aud = new Audio('../Sounds/noti.wav');
                 aud.play();
             }
