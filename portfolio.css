@@ -1,5 +1,8 @@
+/* <====== Google Fonts 📃  ======> */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+/* <====== Scrollbar styling 🔰 ======> */
 
 * {
     margin: 0;
@@ -23,6 +26,77 @@ html {
 ::-webkit-scrollbar-thumb {
     background: #dddd;
 }
+          /* <=================> */
+/* <====== Background Animation 📺 ======> */
+
+.bganimation{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    clip-path: circle(8% at 50% 0%);
+    display: none;
+}
+@keyframes Bganim {
+    0%{
+        display: block;
+        clip-path: circle(8% at 50% 54%);
+        opacity: 1;
+    }
+    10%{
+        clip-path: circle(8% at 50% 90%);
+        opacity: 1;
+    }
+    20%{
+        clip-path: circle(8% at 50% 50%);
+        opacity: 1;
+    }
+    30%{
+        clip-path: circle(8% at 50% 90%);
+        opacity: 1;
+    }
+    40%{
+        clip-path: circle(8% at 50% 50%);
+        opacity: 1;
+    }
+    50%{
+        clip-path: circle(5% at 50% 50%);
+        opacity: 1;
+    }
+    60%{
+        clip-path: circle(10% at 50% 50%);
+        opacity: 1;
+    }
+    70%{
+        clip-path: circle(5% at 50% 50%);
+        opacity: 1;
+    }
+    80%{
+        clip-path: circle(20% at 50% 50%);
+        opacity: 1;
+    }
+    90%{
+        clip-path: circle(100% at 50% 50%);
+        opacity: 1;
+    }
+    91%,95%{
+        display: none;
+        opacity: 0;
+    }
+    95%,100%{
+        display: none;
+        opacity: 0;
+    }
+}
+.purpleBG.active{
+    background: #1A2238;
+    display: block;
+    animation: Bganim 5s  1 linear forwards;
+}
+.blackBG.active{
+    background:black ;
+    display: block;
+    animation: Bganim 5s  1 linear forwards;
+}
 
 body {
     color: #fff;
@@ -30,6 +104,9 @@ body {
     text-shadow: 5px 5px 10px black;
     scroll-behavior: smooth;
 }
+          /* <=================> */
+
+/* <====== Background Blobs ⏺️ ======> */
 
 .home:before {
     content: '';
@@ -150,8 +227,9 @@ html::after {
         transform: translate(10px, -10px);
     }
 }
+          /* <=================> */
 
-/* Loader styling */
+/* <====== Pre-Loader 🔃 ======> */
 
 .loader_bg {
     display: flex;
@@ -242,18 +320,10 @@ html::after {
     font-size: 60px;
     transform: rotate(180deg);
 }
+          /* <=================> */
 
+/* <====== Navbar Styling 📃 ======> */
 
-
-
-
-.max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-/* navbar styling */
 .navbar {
     position: fixed;
     width: 100%;
@@ -336,9 +406,10 @@ html::after {
 .navbar.sticky .menu li a:hover {
     color: crimson;
 }
+          /* <=================> */
 
+/* <====== Menu-BUtton 📃 + Scroll-Up-Button 🔳 Styling  ======> */
 
-/* menu btn styling */
 .menu-btn {
     cursor: pointer;
     display: none;
@@ -390,9 +461,77 @@ html::after {
     opacity: 1;
     pointer-events: auto;
 }
+          /* <=================> */
 
+/* <====== Similar 🟰 Styling  ======> */
 
-/* home section styling */
+section {
+    padding: 100px 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about,
+.services,
+.skills,
+.projects,
+.teams,
+.Timeline,
+.contact,
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.Timeline .Timeline-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+          /* <=================> */
+
+/* <====== Home Section Styling 🏠  ======> */
+
 .home {
     display: flex;
     background: transparent;
@@ -481,80 +620,9 @@ html::after {
     border-radius: 6px;
     transition: all 0.3s ease;
 }
+          /* <=================> */
 
-
-
-
-
-
-/* similar code  */
-
-section {
-    padding: 100px 0;
-}
-
-
-.about,
-.services,
-.skills,
-.projects,
-.teams,
-.Timeline,
-.contact,
-footer {
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
-.Timeline .Timeline-content,
-.contact .contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-section .title {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-section .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-
-section .title::after {
-
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
-
-
-
-
-/* about section styling */
-
-
+/* <====== About Section Styling 📃  ======> */
 
 .about .title::after {
     content: "who I am";
@@ -631,7 +699,6 @@ section .title::after {
 
 .about .about-content .right a:hover i {
     animation: download 0.6s ease-in-out infinite alternate;
-    /* transform: translateX(0.1em); */
 }
 
 @keyframes download {
@@ -644,10 +711,9 @@ section .title::after {
     }
 
 }
+          /* <=================> */
 
-/* services section styling */
-
-
+/* <====== Services Section Styling 📃  ======> */
 
 .services .title::before,
 .teams .title::before {
@@ -765,18 +831,13 @@ i {
     margin: 10px 0 7px 0;
 
 }
+          /* <=================> */
 
-/* skills section styling */
+/* <====== Skills Section Styling 📃  ======> */
 
 .skills .title::after {
     content: "What I Know";
 }
-
-/* .skills {
-    background-image: url(bg2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-} */
 
 .skills .skills-content {
     transform-style: preserve-3d;
@@ -831,7 +892,6 @@ i {
     font-family: inherit;
     color: white;
     background: crimson;
-    /* box-shadow: 0.1px 0.1px 10px crimson, -0.1px -0.1px 10px crimson; */
 }
 
 .skills .skills-content .left a::before {
@@ -928,9 +988,9 @@ i {
     width: 50%;
 
 }
+          /* <=================> */
 
-/* projects section styling */
-
+/* <====== Projects Section Styling 📃  ======> */
 
 .projects .title::after {
     content: "MY WORK";
@@ -1032,8 +1092,10 @@ i {
     padding: 10px 13px;
 
 }
+          /* <=================> */
 
-/* Timeine Styling */
+/* <====== Timeline Section Styling 📃  ======> */
+
 .Timeline .title::after {
     content: "What I done";
 }
@@ -1174,9 +1236,9 @@ i {
 .timeline li:nth-child(even) {
     justify-content: flex-end;
 }
+          /* <=================> */
 
-/* contact section styling */
-
+/* <====== Contact Section Styling 📃  ======> */
 
 .contact .title::after {
     content: "Get In Touch";
@@ -1337,9 +1399,9 @@ i {
     margin: 10px 1% 4% 7%;
     color: #41d241;
 }
+          /* <=================> */
 
-
-/* Wave animation styling */
+/* <====== Wave animation styling =======>*/
 footer .wave {
     position: absolute;
     left: 0;
@@ -1396,8 +1458,9 @@ footer .wave#wave4 {
         background-position-x: 2000px;
     }
 }
+          /* <=================> */
 
-/* footer section styling */
+/* <====== Footer Section Styling 📃  ======> */
 
 footer {
     background: transparent;
@@ -1559,8 +1622,9 @@ footer .theme-changer span i:hover{
     background: white;
     transform: scale(1.2);
 }
+          /* <=================> */
 
-/* responsive media query */
+/* <====== Responsive Media Queries 📱💻  ======> */
 
 @media (max-width:1300px) {
     .home .max-width {
@@ -1880,3 +1944,4 @@ footer .theme-changer span i:hover{
         height: 600px;
     }
 }
+                 /* <==================================================================> */
