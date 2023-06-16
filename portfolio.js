@@ -94,7 +94,7 @@ const blackBG=document.querySelector(".blackBG");
 const CrimBG=document.querySelector(".CrimBG");
 
 social.addEventListener('click', () => {
-    let aud = new Audio('../Sounds/vee.wav')
+    let aud = new Audio('vee.wav')
     aud.play()
 })
 
@@ -116,7 +116,7 @@ btn.addEventListener('click', () => {
                 document.body.style.background = "black";
                 nav.style.background = 'black';
                 menu.style.background = 'black';
-                let aud = new Audio('../Sounds/drum.wav');
+                let aud = new Audio('drum.wav');
                 aud.play();
             }
         },4100)
@@ -128,7 +128,7 @@ btn.addEventListener('click', () => {
                 document.body.style.background = "crimson";
                 nav.style.background = 'crimson';
                 menu.style.background = 'crimson';
-                let aud = new Audio('../Sounds/noti.wav');
+                let aud = new Audio('noti.wav');
                 aud.play();
             }
         },4100)
