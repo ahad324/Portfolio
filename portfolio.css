@@ -179,7 +179,7 @@ body::after {
     left: 50%;
     animation: htm 3s alternate-reverse infinite;
     animation-delay: 2s;
-    background-image: url(../Images/Ahad.jpg);
+    background-image: url(Ahad.jpg);
     background-size: cover;
 }
 
@@ -1671,7 +1671,7 @@ footer .theme-changer span i:hover{
  html::before {
         top: 17%;
         left: 46%;
-        background-image: url(../Images/Ahad.jpg);
+        background-image: url(Ahad.jpg);
         background-size: cover;
     }
 
