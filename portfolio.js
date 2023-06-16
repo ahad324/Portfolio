@@ -145,6 +145,13 @@ window.onload = function () {
     document.querySelector('body').style.display = 'block';
 
 }
+
+/*<=============== To Disable Right Click ===============>*/
+
+window.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+}, false);
+
                 // <<<<<<=========================>>>>>>
 
 // <=============== Contact-Form Submission 📃 ===============>
