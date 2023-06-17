@@ -1953,10 +1953,10 @@ footer .theme-changer span i:hover{
         margin-left: 5%;
     }
 }
-@media (max-width:600px) {
+@media (max-width:720px) {
     .projects .max-width .swiper {
-        width: 300px;
-        height: 300px;
+        width: 270px;
+        height: 270px;
     }
 }
 @media (max-width:350px) {
