@@ -1083,6 +1083,7 @@ i {
     color: var(---secondary-clor);
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
+     transition: .5s all ease;
 }
 
 .projects .max-width .swiper .swiper-slide .card a:hover {
