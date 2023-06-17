@@ -1058,6 +1058,7 @@ i {
     border-radius: 10px;
     transform-style: preserve-3d;
     height: 100%;
+    transform: perspective(1000px);
 }
 
 .projects .max-width .swiper .swiper-slide .card .box img {
@@ -1087,6 +1088,7 @@ i {
 .projects .max-width .swiper .swiper-slide .card a:hover {
     background: white;
     color: var(---primary-clr);
+     transform: translateZ(20px);
 }
 /* <=================> */
 
