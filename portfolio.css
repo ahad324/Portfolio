@@ -1719,7 +1719,7 @@ footer .theme-changer span i:hover{
         top: 100px;
         text-align: center;
         background: var(---primary-clr);
-        padding-top: 1%;
+        padding-top: 10%;
         transition: all 1s ease;
         left: 0;
         right:0;
