@@ -377,7 +377,7 @@ html::after {
 }
 
 .navbar .logo a span {
-    color: var(---primary-clr);
+    color:rgba(132, 116, 254, 1);
     transition: all 0.3s ease;
 }
 
