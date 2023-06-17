@@ -1049,16 +1049,6 @@ i {
     background: transparent;
 }
 
-.projects .carousel .card {
-    background: transparent;
-    border-radius: 6px;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: -5px 5px 10px 2px black;
-    border-radius: 10px;
-    height: 100%;
-}
-
 .projects .max-width .swiper .swiper-slide .card {
     display: flex;
     flex-direction: column;
