@@ -167,7 +167,9 @@ window.addEventListener("contextmenu", function (e) {
                  setTimeout(() => {
                      document.querySelector('.contact .right form .button span').innerHTML = ''
                }, 7000)
-            );
+            ).catch((error) => {
+        alert("Oops! Something went wrong!😔");
+    });
         };
 
                 // <<<<<<<<<<<<<<<<<========================================>>>>>>>>>>>>>>>>>
