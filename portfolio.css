@@ -1009,7 +1009,36 @@ i {
 }
           /* <=================> */
 
+
 /* <====== Projects Section Styling 📃  ======> */
+
+/* <====== Swiper js Styling 📃  ======> */
+
+.projects .max-width .swiper {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.projects .max-width .swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgba(224, 205, 215, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(224, 205, 215, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card,
+.box {
+    margin-block: 10px;
+}
 
 .projects .title::after {
     content: "MY WORK";
@@ -1027,11 +1056,10 @@ i {
     transition: all 0.3s ease;
     box-shadow: -5px 5px 10px 2px black;
     border-radius: 10px;
-    height: 50vh;
+    height: 100%;
 }
 
-
-.projects .carousel .card .box {
+.projects .max-width .swiper .swiper-slide .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1039,17 +1067,10 @@ i {
     transition: all 0.3s ease;
     border-radius: 10px;
     transform-style: preserve-3d;
-    padding: 10px;
-    height: 75%;
+    height: 100%;
 }
 
-
-
-.projects .carousel .card:hover .box {
-    border-radius: 10px;
-}
-
-.projects .carousel .card img {
+.projects .max-width .swiper .swiper-slide .card .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -1059,59 +1080,25 @@ i {
     transform: perspective(1000px);
 }
 
-.projects .carousel .card a {
+.projects .max-width .swiper .swiper-slide .card .box:hover img {
+    transform: translateZ(300px);
+}
+
+.projects .max-width .swiper .swiper-slide .card a {
     width: 200px;
     display: inline-block;
-    margin: 10px;
     padding: 10px;
-     background: crimson;
+    background: var(---primary-clr);
     color: var(---secondary-clor);
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
 }
 
-.projects .carousel .card a:hover {
+.projects .max-width .swiper .swiper-slide .card a:hover {
     background: white;
     color: var(---primary-clr);
 }
-
-.projects .carousel .card .box:hover img {
-    transform: translateZ(90px);
-}
-
-
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid white !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: crimson !important;
-}
-
-.owl-carousel .owl-stage-outer {
-    border-radius: 10px;
-    padding: 10px 13px;
-
-}
-          /* <=================> */
+/* <=================> */
 
 /* <====== Timeline Section Styling 📃  ======> */
 
@@ -1875,10 +1862,9 @@ footer .theme-changer span i:hover{
         display: block;
     }
 
-    .card,
+        .card,
     .box {
-
-        margin-block: 30px;
+        margin-block: 10px;
     }
 
     footer .socials {
@@ -1967,12 +1953,22 @@ footer .theme-changer span i:hover{
         margin-left: 5%;
     }
 }
+@media (max-width:600px) {
+    .projects .max-width .swiper {
+        width: 300px;
+        height: 300px;
+    }
+}
 @media (max-width:350px) {
     .services .serv-content .card:nth-child(1),.services .serv-content .card:nth-child(3){
         height: 500px;
     }
     .services .serv-content .card:nth-child(2){
         height: 600px;
+    }
+     .projects .max-width .swiper {
+        width: 250px;
+        height: 250px;
     }
 }
                  /* <==================================================================> */
