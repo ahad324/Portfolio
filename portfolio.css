@@ -423,7 +423,7 @@ html::after {
 }
 
 .navbar.sticky .menu li a:hover {
-    color: var(---primary-clr);
+    color: rgba(132, 116, 254, 1);
 }
           /* <=================> */
 
