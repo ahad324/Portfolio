@@ -648,7 +648,7 @@ section .title::after {
 .about .about-content .left .dimg img {
     width: 100%;
     height: 100%;
-    border-radius:32% 68% 26% 74% / 68% 60% 40% 32%  ;
+    border-radius:347% 53% 48% 52% / 68% 52% 48% 32%  ;
     object-fit: cover;
 }
 
