@@ -1306,12 +1306,12 @@ i {
     padding: 0 15px;
     font-size: 17px;
     font-family: 'poppins';
-    background: rgba(224, 205, 215, 0.7);
+    background: var(---glass-clr);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.2px);
     -webkit-backdrop-filter: blur(11.2px);
-    border: 1px solid rgba(255, 255, 255, 0.64);
+    border: 1px solid var(---glass-clr);
 }
 
 .contact .right form .textarea {
@@ -1324,13 +1324,13 @@ i {
     padding: 10px;
     border-radius: 20px;
     font-family: 'Poppins';
-    background: rgba(224, 205, 215, 0.7);
+    background: var(---glass-clr);
     cursor: none;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.2px);
     -webkit-backdrop-filter: blur(11.2px);
-    border: 1px solid rgba(255, 255, 255, 0.64);
+    border: 1px solid var(---glass-clr);
      margin-top: 10px;
     resize: none;
 }
