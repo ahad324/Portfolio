@@ -101,7 +101,7 @@ btn.addEventListener('click', () => {
     } else {
         setTimeout(() => {
             if (btn.classList.contains('fa-sun')) {
-                document.body.style.background = "var(---primary-clr)";
+                document.body.style.background = "var(---back-clr)";
                 let aud = new Audio('noti.wav');
                 aud.play();
             }
