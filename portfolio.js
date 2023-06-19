@@ -69,7 +69,7 @@ const blackBG = document.querySelector(".blackBG");
 const blueBG = document.querySelector(".blueBG");
 
 social.addEventListener('click', () => {
-    let aud = new Audio('../Sounds/vee.wav')
+    let aud = new Audio('vee.wav')
     aud.play()
 })
 
@@ -89,7 +89,7 @@ btn.addEventListener('click', () => {
         setTimeout(() => {
             if (btn.classList.contains('fa-moon')) {
                 document.body.style.background = "black";
-                let aud = new Audio('../Sounds/drum.wav');
+                let aud = new Audio('drum.wav');
                 aud.play();
             }
         }, 4100)
@@ -99,7 +99,7 @@ btn.addEventListener('click', () => {
         setTimeout(() => {
             if (btn.classList.contains('fa-sun')) {
                 document.body.style.background = "var(---primary-clr)";
-                let aud = new Audio('../Sounds/noti.wav');
+                let aud = new Audio('noti.wav');
                 aud.play();
             }
         }, 4100)
@@ -107,6 +107,14 @@ btn.addEventListener('click', () => {
     }
 
 })
+// <<<<<<=========================>>>>>>
+
+// <=============== Background Boxes 🔳 ===============>
+for (i = 1; i <= 2500; i++) {
+
+    let sp = document.createElement("span");
+    document.querySelector(".backBoxes").appendChild(sp)
+}
 // <<<<<<=========================>>>>>>
 
 // <=============== Displaying Pre-Loader During Loading 🔃 ===============>
