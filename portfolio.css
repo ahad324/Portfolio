@@ -1068,6 +1068,7 @@ i {
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
     transition: .5s all ease;
+    cursor: none;
 }
 
 .projects .max-width .swiper .swiper-slide .card a:hover {
@@ -1298,6 +1299,7 @@ i {
 .contact .right form .field input {
     height: 100%;
     width: 100%;
+    cursor: none;
     border: 1px solid lightgrey;
     border-radius: 6px;
     outline: none;
@@ -1323,17 +1325,14 @@ i {
     border-radius: 20px;
     font-family: 'Poppins';
     background: rgba(224, 205, 215, 0.7);
+    cursor: none;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.2px);
     -webkit-backdrop-filter: blur(11.2px);
     border: 1px solid rgba(255, 255, 255, 0.64);
-}
-
-.contact .right form .textarea textarea {
-    margin-top: 10px;
+     margin-top: 10px;
     resize: none;
-
 }
 
 .contact .right form .button {
