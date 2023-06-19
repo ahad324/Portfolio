@@ -218,6 +218,7 @@ body {
     height: calc(6.25vw - 2px);
     background: #181818;
     z-index: -9;
+    box-shadow: 4px 4px 10px black;
     border-radius: 10px;
     transition: all 0.5s ease-in;
 }
