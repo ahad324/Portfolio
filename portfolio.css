@@ -589,6 +589,7 @@ section .title::after {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
+    cursor: none;
     color: var(---secondary-clor);
     background: var(---primary-clr);
     box-shadow: 1px 1px 10px var(---primary-clr), -1px -1px 10px var(---primary-clr);
@@ -930,12 +931,11 @@ i {
     position: relative;
     overflow: hidden;
     text-align: center;
+    cursor: none;
     text-transform: uppercase;
     background: var(---primary-clr);
 
 }
-
-
 
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
