@@ -120,6 +120,20 @@ for (i = 1; i <= 2500; i++) {
 }
 // <<<<<<=========================>>>>>>
 
+//    <<<<<=============== Stylish Cursor  🔃 =============== >>>>> 
+
+const cursor = document.querySelector("#cursor");
+
+document.addEventListener("mousemove", (e) => {
+    let x = e.clientX;
+    let y = e.clientY;
+
+    cursor.style.left = x + "px";
+    cursor.style.top = y + "px";
+});
+
+    // <<<<<============================== >>>>> 
+
 // <=============== Displaying Pre-Loader During Loading 🔃 ===============>
 
 window.onload = function () {
