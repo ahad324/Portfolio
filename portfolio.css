@@ -14,6 +14,40 @@
     ---loader-index: 9999;
 }
 
+/* <====== Cursor Styling ======>   */
+
+#cursor {
+    position: fixed;
+    transition: .1s all ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    filter: hue-rotate(20deg);
+    border: 1px solid;
+    pointer-events: none;
+    z-index: 9999;
+    background: var(---primary-clr);
+}
+
+#cursor::before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 50px;
+    left: -150%;
+    cursor: none;
+    top: -150%;
+    border-radius: 100px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid var(---secondary-clor);
+}
+
+/* <=================> */
+
 /* <====== Scrollbar styling 🔰 ======> */
 
 * {
@@ -138,6 +172,7 @@ body {
     text-shadow: 5px 5px 10px black;
     scroll-behavior: smooth;
     position: relative;
+    cursor: none;
 }
 
 /* <=================> */
@@ -333,7 +368,7 @@ body {
     display: inline-block;
     margin-inline-start: 20px;
     color: var(---secondary-clor);
-    cursor: pointer;
+    cursor: none;
 }
 
 .navbar .menu li a {
@@ -374,7 +409,7 @@ body {
 /* <====== Menu-BUtton 📃 + Scroll-Up-Button 🔳 Styling  ======> */
 
 .menu-btn {
-    cursor: pointer;
+    cursor: none;
     display: none;
 }
 
@@ -418,7 +453,7 @@ body {
     z-index: var(---navicon-index);
     font-size: 30px;
     border-radius: 6px;
-    cursor: pointer;
+    cursor: none;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -666,6 +701,7 @@ section .title::after {
     font-weight: 500;
     padding: 0.7em 1em;
     padding-left: 0.9em;
+    cursor: none;
 }
 
 .about .about-content .right a:hover i {
@@ -709,7 +745,7 @@ section .title::after {
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
-    cursor: pointer;
+    cursor: none;
     box-shadow: 2px 2px 40px black;
     transition: all 1s ease;
     overflow: hidden;
@@ -1061,7 +1097,7 @@ i {
 
 .Timeline .Timeline-content h1 i {
     animation: shake .3s alternate infinite;
-    cursor: pointer;
+    cursor: none;
 
 }
 
@@ -1122,7 +1158,7 @@ i {
     justify-content: space-evenly;
     user-select: none;
     align-items: center;
-    cursor: pointer;
+    cursor: none;
     outline: none;
     padding: 25px;
     margin-bottom: 0px;
@@ -1319,7 +1355,7 @@ i {
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.2s;
-    cursor: pointer;
+    cursor: none;
 }
 
 .contact .right form .button button:hover {
@@ -1503,7 +1539,7 @@ footer .socials span i.bottom {
 footer .socials span i {
     color: var(---secondary-clor);
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: none;
     transition: .3s all ease;
 }
 
@@ -1573,7 +1609,7 @@ footer .theme-changer span i {
     height: 20px;
     border-radius: 66% 34% 55% 45% / 34% 71% 29% 66%;
     text-decoration: none;
-    cursor: pointer;
+    cursor: none;
     transition: 1s all ease;
     color: var(---secondary-clor);
     z-index: 999;
@@ -1623,6 +1659,9 @@ footer .theme-changer span i:hover {
 }
 
 @media (max-width:947px) {
+    #cursor{
+        display: none;
+    }
     .menu-btn {
 
         display: block;
@@ -1827,7 +1866,7 @@ footer .theme-changer span i:hover {
     footer .socials span i {
         color: var(---secondary-clor);
         font-size: 18px;
-        cursor: pointer;
+        cursor: none;
         transition: .3s all ease;
     }
 
