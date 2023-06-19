@@ -1302,6 +1302,7 @@ i {
     height: 100%;
     width: 100%;
     cursor: none;
+    color:var(---secondary-clor);
     border: 1px solid lightgrey;
     border-radius: 6px;
     outline: none;
@@ -1335,6 +1336,7 @@ i {
     border: 1px solid var(---glass-clr);
      margin-top: 10px;
     resize: none;
+    color:var(---secondary-clor);
 }
 
 .contact .right form .button {
