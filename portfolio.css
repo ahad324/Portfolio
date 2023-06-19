@@ -428,7 +428,7 @@ body {
 }
 
 .menu-btn i.active:nth-child(1) {
-    transform: rotate(50deg);
+    transform: rotate(45deg);
     position: absolute;
 }
 
