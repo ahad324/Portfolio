@@ -61,6 +61,9 @@ var randomColor = "#" + (Math.ceil (Math.random ()*16777215).toString (16));
 
                 // <<<<<<=========================>>>>>>
 
+
+//<=============== Changing Theme 📺 and Adding Some Sounds On Clicking The Buttons 🔊 ===============>
+
 const btn = document.querySelector('.theme-btn');
 const nav = document.querySelector('.navbar')
 const menu = document.querySelector('.navbar .menu')
