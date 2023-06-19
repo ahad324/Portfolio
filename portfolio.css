@@ -648,26 +648,8 @@ section .title::after {
 .about .about-content .left .dimg img {
     width: 100%;
     height: 100%;
-    border-radius: 53% 47% 39% 61% / 62% 52% 48% 38%;
+    border-radius:32% 68% 26% 74% / 68% 60% 40% 32%  ;
     object-fit: cover;
-    animation: imganim 5s alternate-reverse infinite;
-}
-@keyframes imganim {
-    15% {
-        border-radius: 61% 39% 48% 52% / 41% 55% 45% 59%;
-    }
-
-    25% {
-        border-radius: 53% 47% 43% 57% / 43% 52% 48% 57%;
-    }
-
-    50% {
-        border-radius: 69% 31% 60% 40% / 34% 65% 35% 66%
-    }
-
-    100% {
-        border-radius: 40% 60% 48% 52% / 70% 62% 38% 30%
-    }
 }
 
 .about .about-content .right {
