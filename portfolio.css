@@ -1085,7 +1085,9 @@ i {
     color: var(---primary-clr);
     transform: translateZ(20px);
 }
-
+.projects .max-width .swiper h2 .small {
+    display: none;
+}
 
 /* <=================> */
 
@@ -1795,7 +1797,12 @@ footer .theme-changer span i:hover {
     .services .serv-content .card:nth-child(2) {
         height: 630px;
     }
-
+  .projects .max-width .swiper h2 .small {
+        display: block;
+    }
+    .projects .max-width .swiper h2 .large {
+        display: none;
+    }
 }
 
 @media (max-width:720px) {
