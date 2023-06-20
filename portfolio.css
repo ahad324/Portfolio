@@ -15,7 +15,17 @@
 }
 
 /* <====== Cursor Styling ======>   */
+#cursor.active {
+    transition: .1s all ease;
+    mix-blend-mode: hard-light;
+    transform: scale(1.6);
+    background: #292323;
+}
 
+#cursor.active::before {
+    background: #292323;
+    transition: .1s all ease;
+}
 #cursor {
     position: fixed;
     transition: .1s all ease;
