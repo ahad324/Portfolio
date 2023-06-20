@@ -25,6 +25,7 @@
 #cursor.active::before {
     background: #292323;
     transition: .1s all ease;
+     border: 5px solid black;
 }
 #cursor {
     position: fixed;
