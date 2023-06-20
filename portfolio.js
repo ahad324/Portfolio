@@ -139,7 +139,7 @@ document.querySelectorAll("a").forEach((e)=>{
         document.getElementById("cursor").classList.remove("active");
     })
 
-}
+});
     // <<<<<============================== >>>>> 
 
 // <=============== Displaying Pre-Loader During Loading 🔃 ===============>
