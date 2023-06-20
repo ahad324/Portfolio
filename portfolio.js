@@ -120,7 +120,7 @@ for (i = 1; i <= 2500; i++) {
 }
 // <<<<<<=========================>>>>>>
 
-//    <<<<<=============== Stylish Cursor  🔃 =============== >>>>> 
+//    <<<<<=============== Stylish Cursor  🔃 + Changing Cursor =============== >>>>> 
 
 const cursor = document.querySelector("#cursor");
 
@@ -131,7 +131,15 @@ document.addEventListener("mousemove", (e) => {
     cursor.style.left = x + "px";
     cursor.style.top = y + "px";
 });
+document.querySelectorAll("a").forEach((e)=>{
+    e.addEventListener("mouseenter",()=>{
+        document.getElementById("cursor").classList.add("active");
+    })
+    e.addEventListener("mouseleave",()=>{
+        document.getElementById("cursor").classList.remove("active");
+    })
 
+}
     // <<<<<============================== >>>>> 
 
 // <=============== Displaying Pre-Loader During Loading 🔃 ===============>
