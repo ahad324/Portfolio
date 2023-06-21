@@ -993,14 +993,14 @@ i {
 
 .skills-content .right .react::before {
     width: 70%;
-
 }
 
 .skills-content .right .mysql::before {
     width: 50%;
-
 }
-
+.skills-content .right .C::before {
+    width: 70%;
+}
 /* <=================> */
 
 /* <====== Projects Section Styling 📃  ======> */
