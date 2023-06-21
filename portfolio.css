@@ -1054,7 +1054,6 @@ i {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 8px;
     transition: all 0.3s ease;
     border-radius: 10px;
     transform: perspective(1000px);
