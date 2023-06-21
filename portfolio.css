@@ -1872,9 +1872,6 @@ footer .theme-changer span i:hover {
         width: 80%;
     }
 
-    .timeline .panel[open] summary {
-        font-size: 1.5rem;
-    }
 }
 
 @media (max-width:500px) {
