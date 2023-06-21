@@ -340,16 +340,12 @@ body {
     padding: 30px 0;
     font-family: 'ubuntu', sans-serif;
     transition: all 0.3s ease;
-    /* backdrop-filter: blur(20px); */
-    /* background: rgb(255, 255, 255, 0.2); */
 }
 
 .navbar.sticky {
-    padding: 30px 0;
     color: var(---secondary-clor);
     box-shadow: 2px 2px 20px black;
     text-shadow: 5px 5px 5px black;
-    z-index: var(---navicon-index);
     background: var(---glass-clr);
 }
 
@@ -442,7 +438,7 @@ body {
 }
 
 .menu-btn i.active:nth-child(1) {
-    transform: rotate(45deg);
+    transform: rotate(50deg);
     position: absolute;
 }
 
