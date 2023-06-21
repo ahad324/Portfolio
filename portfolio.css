@@ -992,7 +992,7 @@ i {
 }
 
 .skills-content .right .react::before {
-    width: 70%;
+    width: 30%;
 }
 
 .skills-content .right .mysql::before {
@@ -1130,10 +1130,7 @@ i {
 .Timeline .Timeline-content .wrapper {
     width: 100%;
     max-width: 1000px;
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
-    color: black;
     text-align: center;
 }
 
@@ -1145,93 +1142,50 @@ i {
 }
 
 .timeline li {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     position: relative;
     display: flex;
+    justify-content: center;
 }
 
-.timeline .panel {
-    width: 46%;
+.timeline  li .panel {
+    width: 70%;
+    left: 0;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    background-color: #f5f5f5;
-    box-shadow: 2px 2px 5px black, inset 2px 2px 10px black;
+    background-color: rgb(255, 255, 255, 0.01);
+    box-shadow: 1px 1px 10px black;
+    backdrop-filter: blur(10px) contrast(0.7);
+    color: var(---secondary-clor);
 }
 
 .timeline p {
-    padding: 0 10px 10px 10px;
-    text-overflow: hidden;
-    text-shadow: 0px 0px;
+    text-shadow: 2px 2px 10px black;
+    font-size: 1.5rem;
+    padding: 5% 18%;
 }
 
 .timeline summary {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     user-select: none;
     align-items: center;
     cursor: none;
     outline: none;
-    padding: 25px;
-    margin-bottom: 0px;
+    padding: 8px 25px;
+    margin-bottom: 4px;
     transition: all 600ms cubic-bezier(0.2, 1, 0.3, 1);
     font-weight: 600;
     text-shadow: 0px 0px 0px black;
-    filter: blur(1px);
-}
-
-.timeline .panel[open] summary {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
     font-size: 1.5rem;
-    filter: blur(0px);
-}
-
-.timeline .panel[open] summary i {
-    font-size: 2rem;
-    margin: 10px;
-
-}
-
-.timeline summary:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-color: #201414;
-    filter: blur(0px);
+    width: 100%;
 }
 
 .timeline summary i {
-    color: black;
-    font-size: 1.2rem;
-}
-
-.timeline::before {
-    top: 0px;
-    bottom: 0px;
-    left: 50%;
-    border: 2px solid black;
-    content: "";
-    position: absolute;
-    width: 5px;
-    background: black;
-    box-shadow: 2px 2px 5px black, -2px -2px 10px black;
-}
-
-
-.timeline li::before {
-    content: '';
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 18px;
-    left: 49%;
-    background: linear-gradient(to bottom right, var(---primary-clr), #ff0072);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-.timeline li:nth-child(even) {
-    justify-content: flex-end;
+    color: var(---secondary-clor);
+    font-size: 3.2rem;
 }
 
 /* <=================> */
@@ -1671,9 +1625,10 @@ footer .theme-changer span i:hover {
 }
 
 @media (max-width:947px) {
-    #cursor{
+    #cursor {
         display: none;
     }
+
     .menu-btn {
 
         display: block;
@@ -1734,7 +1689,6 @@ footer .theme-changer span i:hover {
         display: flex;
         width: 0%;
         height: 2px;
-        background: #e13690;
         color: var(---secondary-clor);
         transition: .6s all ease;
     }
@@ -1797,9 +1751,11 @@ footer .theme-changer span i:hover {
     .services .serv-content .card:nth-child(2) {
         height: 630px;
     }
-  .projects .max-width .swiper h2 .small {
+
+    .projects .max-width .swiper h2 .small {
         display: block;
     }
+
     .projects .max-width .swiper h2 .large {
         display: none;
     }
@@ -1917,7 +1873,6 @@ footer .theme-changer span i:hover {
     }
 
     .timeline li .panel {
-        left: 10%;
         width: 80%;
     }
 
@@ -1938,6 +1893,9 @@ footer .theme-changer span i:hover {
     .about .about-content .right a {
         margin-left: 5%;
     }
+    .timeline  li .panel p{
+        padding: 20px ;
+    }
 }
 
 @media (max-width:350px) {
@@ -1954,6 +1912,9 @@ footer .theme-changer span i:hover {
     .projects .max-width .swiper {
         width: 250px;
         height: 250px;
+    }
+    .timeline li .panel {
+        width: 90%;
     }
 }
 
