@@ -113,7 +113,7 @@ btn.addEventListener('click', () => {
 // <<<<<<=========================>>>>>>
 
 // <=============== Background Boxes 🔳 ===============>
-const viewport = window.innerHeight + window.innerWidth + window.outerHeight + window.outerWidth - 200;
+const viewport = window.innerHeight + window.innerWidth + window.outerHeight + window.outerWidth;
 
 for (i = 1; i <= viewport; i++) {
     let sp = document.createElement("span");
