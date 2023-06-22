@@ -438,19 +438,87 @@ body {
 }
 
 .menu-btn i.active:nth-child(1) {
-    transform: rotate(50deg);
-    position: absolute;
+    animation: men1 1.5s linear 1;
+    animation-delay: .1s;
+    width: 25px;
+    height: 5px;
+    transform: rotate(-45deg) translate(-3px, 2.8px);
 }
 
 .menu-btn i.active:nth-child(2) {
-    transform: translateX(250px);
+    animation: men2 1.5s linear 1;
+    animation-delay: .2s;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-200px);
 }
 
 .menu-btn i.active:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -6px);
+    animation: men3 1.5s linear 1;
+    animation-delay: .3s;
+    width: 25px;
+    height: 5px;
+    position: absolute;
+    transform: rotate(50deg) translate(-17px, -15px);
 }
 
+@keyframes men1 {
+    10% {
+        width: 10px;
+        height: 10px;
+    }
 
+    40% {
+        transform: translateY(30px);
+    }
+
+    60% {
+        border-radius: 100px;
+        width: 10px;
+        height: 10px;
+    }
+
+    80% {
+        transform: rotate(-250deg);
+    }
+}
+
+@keyframes men2 {
+    10% {
+        width: 10px;
+        height: 10px;
+    }
+
+    40% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes men3 {
+    10% {
+        width: 10px;
+        height: 10px;
+    }
+
+    40% {
+        transform: translateY(30px);
+    }
+
+    60% {
+        border-radius: 100px;
+        width: 10px;
+        height: 10px;
+    }
+
+    80% {
+        transform: rotate(250deg);
+    }
+}
 .scroll-up-btn {
     position: fixed;
     height: 45px;
