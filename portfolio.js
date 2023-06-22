@@ -113,8 +113,9 @@ btn.addEventListener('click', () => {
 // <<<<<<=========================>>>>>>
 
 // <=============== Background Boxes 🔳 ===============>
-for (i = 1; i <= 2500; i++) {
+const viewport = window.innerHeight + window.innerWidth + window.outerHeight + window.outerWidth - 200;
 
+for (i = 1; i <= viewport; i++) {
     let sp = document.createElement("span");
     document.querySelector(".backBoxes").appendChild(sp)
 }
