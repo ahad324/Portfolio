@@ -671,8 +671,8 @@ section .title::after {
     font-size: 16px;
     transition: .3s;
     z-index: 1;
-    font-family: inherit;
     cursor: none;
+    text-shadow: none;
     color: var(---back-clr);
     background: var(---primary-clr);
 }
