@@ -675,7 +675,6 @@ section .title::after {
     cursor: none;
     color: var(---secondary-clor);
     background: var(---primary-clr);
-    box-shadow: 1px 1px 10px var(---primary-clr), -1px -1px 10px var(---primary-clr);
 }
 
 .home .home-content a::before {
