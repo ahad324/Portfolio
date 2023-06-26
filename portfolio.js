@@ -92,7 +92,6 @@ btn.addEventListener('click', () => {
             if (btn.classList.contains('fa-moon')) {
                 document.body.style.background = "black";
                 document.getElementById("universe").style.display = "block";
-                document.body.style.textShadow = "2px 2px 5px black"
                 let aud = new Audio('drum.wav');
                 aud.play();
             }
@@ -104,7 +103,6 @@ btn.addEventListener('click', () => {
             if (btn.classList.contains('fa-sun')) {
                 document.body.style.background = "var(---back-clr)";
                 document.getElementById("universe").style.display = "none";
-                document.body.style.textShadow = " 5px 5px 10px black"
                 let aud = new Audio('noti.wav');
                 aud.play();
             }
