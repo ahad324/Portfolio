@@ -69,7 +69,7 @@ const nav = document.querySelector('.navbar')
 const menu = document.querySelector('.navbar .menu')
 const social = document.querySelector('footer .socials ');
 const blackBG = document.querySelector(".blackBG");
-const blueBG = document.querySelector(".blueBG");
+const PrimBG = document.querySelector(".PrimBG");
 
 social.addEventListener('click', () => {
     let aud = new Audio('vee.wav')
@@ -78,20 +78,21 @@ social.addEventListener('click', () => {
 
 btn.addEventListener('click', () => {
     btn.classList.toggle('fa-moon');
-
     // <====== Background Animation 📺 ======>
 
     blackBG.classList.toggle("active");
     if (blackBG.classList.contains("active")) {
-        blueBG.classList.remove("active");
+        PrimBG.classList.remove("active");
     } else {
-        blueBG.classList.add("active");
+        PrimBG.classList.add("active");
     }
 
     if (blackBG.classList.contains("active")) {
         setTimeout(() => {
             if (btn.classList.contains('fa-moon')) {
                 document.body.style.background = "black";
+                document.getElementById("universe").style.display = "block";
+                document.body.style.textShadow = "2px 2px 5px black"
                 let aud = new Audio('drum.wav');
                 aud.play();
             }
@@ -102,6 +103,8 @@ btn.addEventListener('click', () => {
         setTimeout(() => {
             if (btn.classList.contains('fa-sun')) {
                 document.body.style.background = "var(---back-clr)";
+                document.getElementById("universe").style.display = "none";
+                document.body.style.textShadow = " 5px 5px 10px black"
                 let aud = new Audio('noti.wav');
                 aud.play();
             }
@@ -112,14 +115,40 @@ btn.addEventListener('click', () => {
 })
 // <<<<<<=========================>>>>>>
 
-// <=============== Background Boxes 🔳 ===============>
-const viewport = window.innerHeight + window.innerWidth + window.outerHeight + window.outerWidth;
-
-for (i = 1; i <= viewport; i++) {
-    let sp = document.createElement("span");
-    document.querySelector(".backBoxes").appendChild(sp)
+// <=============== Background Stars ✨ ===============>
+var layerCount = 5;
+var starCount = 100;
+var universe = document.getElementById('universe');
+var w = window;
+var d = document;
+var e = d.documentElement;
+var g = d.getElementsByTagName('body')[0];
+var width = w.innerWidth || e.clientWidth || g.clientWidth;
+var height = w.innerHeight || e.clientHeight || g.clientHeight;
+for (var l = 0; l < layerCount; ++l) {
+    var layer = document.createElement('div');
+    layer.setAttribute('id', 'layer' + l);
+    layer.setAttribute('class', 'starfield');
+    universe.appendChild(layer);
+    for (var i = 0; i < starCount; ++i) {
+        var xpos = Math.round(Math.random() * width);
+        var ypos = Math.round(Math.random() * height);
+        for (var s = 0; s < 2; ++s) {
+            var star = document.createElement('div');
+            star.setAttribute('class', 'star' + l);
+            star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
+            star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
+            star.style.backgroundColor = 'white';//rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
+            layer.appendChild(star);
+        }
+    }
+    layer.animate([{ transform: 'translate3d(0, 0, 0)' },
+    { transform: 'translate3d(-' + width + 'px, 0, 0)' }],
+        { duration: Math.pow(2, layerCount - l) * 2000, iterations: Infinity });
 }
+
 // <<<<<<=========================>>>>>>
+
 
 //    <<<<<=============== Stylish Cursor  🔃 + Changing Cursor =============== >>>>> 
 
