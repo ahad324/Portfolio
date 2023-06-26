@@ -1379,6 +1379,7 @@ i {
     font-size: 20px;
     background: var(---primary-clr);
     color: var(---secondary-clor);
+    text-shadow: 2px 2px 10px black;
     padding: 0.7em 1em;
     padding-left: 0.9em;
     display: flex;
