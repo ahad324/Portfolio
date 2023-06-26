@@ -648,5 +648,24 @@
             }
         });
     </script>
+
+                            <!-- <======= Smooth Scrolling  =======> -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+            smoothWheel: true
+            smoothTouch:true
+            wrapper:document.querySelector(".about")
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
 </body>
 </html>
