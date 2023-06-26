@@ -673,7 +673,7 @@ section .title::after {
     z-index: 1;
     font-family: inherit;
     cursor: none;
-    color: var(---secondary-clor);
+    color: var(---back-clr);
     background: var(---primary-clr);
 }
 
