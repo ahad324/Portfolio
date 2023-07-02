@@ -1165,7 +1165,7 @@ i {
     background: var(---primary-clr);
     color: var(---secondary-clor);
     border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 1px 1px 10px black;
     transition: .5s all ease;
     cursor: none;
 }
