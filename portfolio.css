@@ -1159,19 +1159,20 @@ i {
 }
 
 .projects .max-width .swiper .swiper-slide .card a {
-    width: 200px;
+     width: 200px;
     display: inline-block;
     padding: 10px;
     background: var(---primary-clr);
-    color: var(---secondary-clor);
+    color: var(---back-clr);
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
     transition: .5s all ease;
     cursor: none;
+    text-shadow: 0 0;
 }
 
 .projects .max-width .swiper .swiper-slide .card a:hover {
-    background: var(---secondary-clor);
+    background: var(---back-clr);
     color: var(---primary-clr);
     transform: translateZ(20px);
 }
