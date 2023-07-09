@@ -39,16 +39,13 @@
 
 /* <====== Cursor Styling ======>   */
 #cursor.active {
-    transition: .1s all ease;
-    mix-blend-mode: hard-light;
-    transform: scale(1.6);
+    mix-blend-mode: difference;
+    transform: scale(4);
     background: #292323;
 
 }
 
 #cursor.active::before {
-    background: #292323;
-    transition: .1s all ease;
     border: 5px solid black;
 }
 
