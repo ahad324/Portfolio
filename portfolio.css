@@ -437,7 +437,7 @@ body {
 }
 
 .navbar.sticky .menu li a:hover {
-    color: var(---back-clr);
+    color: var(---primary-clr);
 }
 
 /* <=================> */
