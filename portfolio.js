@@ -204,13 +204,4 @@ window.addEventListener("contextmenu", function (e) {
         };
                 // <<<<<<=========================>>>>>>
 
-// <=============== Some animation on Scroll 💫 ===============>
-  window.onscroll = function () {
-    scrollRotate();
-  }
-function scrollRotate() {
-    document.querySelector(".about .about-content .left .dimg img").style.transform = "translateY(-" + window.scrollY / 20 + "px)";
-}
-                // <<<<<<=========================>>>>>>
-
                 // <<<<<<<<<<<<<<<<<========================================>>>>>>>>>>>>>>>>>
