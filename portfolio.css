@@ -70,9 +70,9 @@
     position: relative;
     display: block;
     width: 50px;
-    left: -150%;
+    left: -125%;
     cursor: none;
-    top: -150%;
+    top: -125%;
     border-radius: 100px;
     height: 50px;
     background: transparent;
