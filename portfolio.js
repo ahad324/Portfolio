@@ -142,7 +142,7 @@ for (var l = 0; l < layerCount; ++l) {
     }
     layer.animate([{ transform: 'translate3d(0, 0, 0)' },
     { transform: 'translate3d(-' + width + 'px, 0, 0)' }],
-        { duration: Math.pow(2, layerCount - l) * 2000, iterations: Infinity });
+        { duration: Math.pow(2, layerCount - l) * 7000, iterations: Infinity });
 }
 
 // <<<<<<=========================>>>>>>
