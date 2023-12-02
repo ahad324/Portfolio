@@ -39,14 +39,14 @@ $(document).ready(function () {
   // <=============== Text Typing Animation ✍️ ===============>
 
      var typed = new Typed(".typing", {
-        strings: ["WEB-DEVELOPER", "FREELANCER", "APP-DEVELOPER", "UI/UIX Designer"],
+        strings: ["WEB-DEVELOPER","APP-DEVELOPER", "UI/UIX Designer","Server Tester","Web Exploiter"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["WEB-DEVELOPER", "FREELANCER", "APP-DEVELOPER", "UI/UIX Designer"],
+        strings: ["WEB-DEVELOPER","APP-DEVELOPER", "UI/UIX Designer","Server Tester","Web Exploiter"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
