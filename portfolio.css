@@ -883,40 +883,21 @@ i {
     transform: scale(1.2);
     text-shadow: 5px 5px 10px black;
 }
-
 .services .serv-content .card::before {
     content: "";
     position: absolute;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
-    left: 0;
-    top: 100%;
-    transition: 1s all ease;
+    width: 500px;
+    height: 500px;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    background: radial-gradient(#3B3486, transparent , transparent);
+    transition: .5s , top 0s , left 0s;
+    opacity: 0;
 }
-
-.services .serv-content .card:hover::before {
-    top: 0;
+.services .serv-content .card:hover::before{
+    opacity: 1;
 }
-
-.services .serv-content .card::after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    left: 50%;
-    bottom: 100%;
-    z-index: -1;
-    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
-    transition: 1s all ease;
-}
-
-.services .serv-content .card:hover:after {
-    bottom: 0;
-}
-
-
-
 .services .serv-content .card .box {
     transform-style: preserve-3d;
 }
