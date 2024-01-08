@@ -115,7 +115,7 @@ btn.addEventListener('click', () => {
 
 // <=============== Background Stars ✨ ===============>
 var layerCount = 5;
-var starCount = 100;
+var starCount = 50;
 var universe = document.getElementById('universe');
 var w = window;
 var d = document;
@@ -136,15 +136,14 @@ for (var l = 0; l < layerCount; ++l) {
             star.setAttribute('class', 'star' + l);
             star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
             star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-            star.style.backgroundColor = 'white';//rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
+            star.style.backgroundColor = 'rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
             layer.appendChild(star);
         }
     }
     layer.animate([{ transform: 'translate3d(0, 0, 0)' },
     { transform: 'translate3d(-' + width + 'px, 0, 0)' }],
-        { duration: Math.pow(2, layerCount - l) * 7000, iterations: Infinity });
+        { duration: Math.pow(2, layerCount - l) * 10000, iterations: Infinity });
 }
-
 // <<<<<<=========================>>>>>>
 
 
@@ -204,4 +203,16 @@ window.addEventListener("contextmenu", function (e) {
         };
                 // <<<<<<=========================>>>>>>
 
+// <=============== card Hover Animations  ===============>
+let cards = document.querySelectorAll(".services .serv-content .card");
+cards.forEach(card => {
+    card.onmousemove = function (e) {
+        let x = e.pageX - card.offsetLeft;
+        let y = e.pageY - card.offsetTop;
+
+        card.style.setProperty('--x', x + 'px');
+        card.style.setProperty('--y', y + 'px');
+    }
+})
+                 // <<<<<<=========================>>>>>> 
                 // <<<<<<<<<<<<<<<<<========================================>>>>>>>>>>>>>>>>>
