@@ -1709,11 +1709,13 @@ footer .theme-changer span i:hover {
     .max-width {
         padding: 0 50px;
     }
+    .navbar{
+        width: 90%;
+        left: 5%;
+    }
     .navbar.sticky {
         top:1%;
         backdrop-filter: unset;
-        width: 90%;
-        left: 5%;
     }
 
     .navbar .menu {
