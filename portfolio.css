@@ -358,18 +358,22 @@ body {
 /* <====== Navbar Styling 📃 ======> */
 
 .navbar {
-    position: fixed;
-    width: 100%;
+     position: fixed;
+    width: 80%;
+    left: 10%;
     z-index: var(---navicon-index);
     padding: 30px 0;
     font-family: 'ubuntu', sans-serif;
     transition: all 0.3s ease;
+    border-radius: 20px;
 }
 
 .navbar.sticky {
-    padding: 30px 0;
+    top: 4%;
+    height: 80px;
+    padding: 16px 0;
     color: var(---secondary-clor);
-    box-shadow: 2px 2px 20px black;
+    box-shadow: 5px 5px 50px black;
     text-shadow: 5px 5px 5px black;
     background: var(---glass-clr);
     backdrop-filter: blur(20px);
@@ -1706,30 +1710,30 @@ footer .theme-changer span i:hover {
         padding: 0 50px;
     }
     .navbar.sticky {
+        top:1%;
         backdrop-filter: unset;
+        width: 90%;
+        left: 5%;
     }
+
     .navbar .menu {
         position: fixed;
         height: 100%;
-        width: 100%;
-        top: 100px;
+        width: 90%;
+        top: -100%;
         text-align: center;
         background: transparent;
         backdrop-filter: blur(20px);
         background: rgb(255, 255, 255, 0.2);
         padding-top: 10%;
-        transition: all 1s ease;
-        left: 0;
-        right: 0;
-        clip-path: circle(17% at 90% -40vh);
+        transition: all .5s ease;
+        left: 5%;
+        border-radius: 20px;
     }
 
     .navbar .menu.active {
         top: 100px;
-        clip-path: circle(100% at 59vh 41vh);
-        left: 0;
-        right: 0;
-        transition: all 1s ease;
+        transition: all .5s ease;
     }
 
     .navbar .menu li {
