@@ -1002,7 +1002,7 @@ i {
 
 .skills .skills-content .left a {
     display: inline-block;
-    box-shadow: 10px 10px 20px  black , -10px -10px 20px black;
+    box-shadow: 5px 5px 10px  black , -5px -5px 10px black;
     text-shadow: 0 0 0 black;
     color: black;
     font-size: 18px;
