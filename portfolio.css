@@ -685,6 +685,7 @@ section .title::after {
 }
 
 .home .home-content a {
+    box-shadow: 5px 5px 20px black , -5px -5px 20px black;
     padding: 0.8em 1.8em;
     border: 2px solid var(---primary-clr);
     position: relative;
