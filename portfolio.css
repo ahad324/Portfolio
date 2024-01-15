@@ -1002,8 +1002,9 @@ i {
 
 .skills .skills-content .left a {
     display: inline-block;
-    background-color: var(---primary-clr);
-    color: var(---secondary-clor);
+    box-shadow: 10px 10px 20px  black , -10px -10px 20px black;
+    text-shadow: 0 0 0 black;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
