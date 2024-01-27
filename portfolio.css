@@ -373,7 +373,7 @@ body {
     height: 80px;
     padding: 16px 0;
     color: var(---secondary-clor);
-    box-shadow: 5px 5px 50px black;
+    box-shadow: 0 0.7em 1.5em -0.5em black, 1px -1px 15em -0.5em black;
     text-shadow: 5px 5px 5px black;
     background: var(---glass-clr);
     backdrop-filter: blur(20px);
@@ -685,7 +685,7 @@ section .title::after {
 }
 
 .home .home-content a {
-    box-shadow: 5px 5px 20px black , -5px -5px 20px black;
+    box-shadow: 0 0.7em 1.5em -0.5em var(---primary-clr), 1px -1px 15em -0.5em var(---primary-clr);
     padding: 0.8em 1.8em;
     border: 2px solid var(---primary-clr);
     position: relative;
@@ -1002,7 +1002,7 @@ i {
 
 .skills .skills-content .left a {
     display: inline-block;
-    box-shadow: 5px 5px 10px  black , -5px -5px 10px black;
+    box-shadow: 0 0.7em 1.5em -0.5em var(---primary-clr), 1px -1px 15em -0.5em var(---primary-clr);
     text-shadow: 0 0 0 black;
     color: black;
     font-size: 18px;
