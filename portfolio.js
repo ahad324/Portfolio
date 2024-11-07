@@ -18,15 +18,15 @@ $(document).ready(function () {
             $('footer .socials,footer .socials span,footer .socials span i').removeClass('bottom');
         };
     });
-                // <<<<<<=========================>>>>>>
+    // <<<<<<=========================>>>>>>
 
-   // <=============== Slide-Up Button 🔲 ===============>
+    // <=============== Slide-Up Button 🔲 ===============>
     $('.scroll-up-btn').click(function () {
         $('html').animate({ scrollTop: 0 });
 
     });
-                // <<<<<<=========================>>>>>>
-    
+    // <<<<<<=========================>>>>>>
+
     // <=============== Toggling Menu 🤓 ===============>
 
     $('.menu-btn').click(function () {
@@ -34,32 +34,32 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
         $('.navbar').toggleClass("active");
     })
-                // <<<<<<=========================>>>>>>
+    // <<<<<<=========================>>>>>>
 
-  // <=============== Text Typing Animation ✍️ ===============>
+    // <=============== Text Typing Animation ✍️ ===============>
 
-     var typed = new Typed(".typing", {
-        strings: ["WEB-DEVELOPER","APP-DEVELOPER", "UI/UIX Designer","Server Tester","Web Exploiter"],
+    var typed = new Typed(".typing", {
+        strings: ["WEB-DEVELOPER", "APP-DEVELOPER", "UI/UIX Designer", "Server Tester"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["WEB-DEVELOPER","APP-DEVELOPER", "UI/UIX Designer","Server Tester","Web Exploiter"],
+        strings: ["WEB-DEVELOPER", "APP-DEVELOPER", "UI/UIX Designer", "Server Tester"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
 });
-                // <<<<<<=========================>>>>>>
+// <<<<<<=========================>>>>>>
 /*
 <=============== Random Color Generator (You Can Use If U Want 😊) ===============>
 var randomColor = "#" + (Math.ceil (Math.random ()*16777215).toString (16));
 */
 
-                // <<<<<<=========================>>>>>>
+// <<<<<<=========================>>>>>>
 
 
 //<=============== Changing Theme 📺 and Adding Some Sounds On Clicking The Buttons 🔊 ===============>
@@ -158,16 +158,16 @@ document.addEventListener("mousemove", (e) => {
     cursor.style.left = x + "px";
     cursor.style.top = y + "px";
 });
-document.querySelectorAll("a").forEach((e)=>{
-    e.addEventListener("mouseenter",()=>{
+document.querySelectorAll("a").forEach((e) => {
+    e.addEventListener("mouseenter", () => {
         document.getElementById("cursor").classList.add("active");
     })
-    e.addEventListener("mouseleave",()=>{
+    e.addEventListener("mouseleave", () => {
         document.getElementById("cursor").classList.remove("active");
     })
 
 });
-    // <<<<<============================== >>>>> 
+// <<<<<============================== >>>>> 
 
 // <=============== Displaying Pre-Loader During Loading 🔃 ===============>
 
@@ -182,26 +182,26 @@ window.onload = function () {
 window.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 }, false);
-                // <<<<<<=========================>>>>>>
+// <<<<<<=========================>>>>>>
 
 // <=============== Contact-Form Submission 📃 ===============>
 
- function sendEmail() {
-            emailjs.send("service_u95p0ps", "template_s9ks5eq", {
-                from_name: document.querySelector('.contact .right form .name input').value,
-                message: document.querySelector('.contact .right form .textarea textarea').value,
-                subject: document.querySelector('.contact .right form .subject input').value + "<br> Email_id : " + document.querySelector('.contact .right form .email input').value,
-            }, "hqVI9Kr1m8IIkGMKC").then(
-                message => (document.querySelector('.contact .right form .button span').style.display = "block"),
-                 //remove message after seven seconds
-                 setTimeout(() => {
-                     document.querySelector('.contact .right form .button span').innerHTML = ''
-               }, 7000)
-            ).catch((error) => {
+function sendEmail() {
+    emailjs.send("service_u95p0ps", "template_s9ks5eq", {
+        from_name: document.querySelector('.contact .right form .name input').value,
+        message: document.querySelector('.contact .right form .textarea textarea').value,
+        subject: document.querySelector('.contact .right form .subject input').value + "<br> Email_id : " + document.querySelector('.contact .right form .email input').value,
+    }, "hqVI9Kr1m8IIkGMKC").then(
+        message => (document.querySelector('.contact .right form .button span').style.display = "block"),
+        //remove message after seven seconds
+        setTimeout(() => {
+            document.querySelector('.contact .right form .button span').innerHTML = ''
+        }, 7000)
+    ).catch((error) => {
         alert("Oops! Something went wrong!😔");
     });
-        };
-                // <<<<<<=========================>>>>>>
+};
+// <<<<<<=========================>>>>>>
 
 // <=============== card Hover Animations  ===============>
 let cards = document.querySelectorAll(".services .serv-content .card");
@@ -214,5 +214,5 @@ cards.forEach(card => {
         card.style.setProperty('--y', y + 'px');
     }
 })
-                 // <<<<<<=========================>>>>>> 
-                // <<<<<<<<<<<<<<<<<========================================>>>>>>>>>>>>>>>>>
+// <<<<<<=========================>>>>>>
+// <<<<<<<<<<<<<<<<<========================================>>>>>>>>>>>>>>>>>
